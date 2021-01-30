@@ -7,7 +7,7 @@
 # Setting up cluster on digitalocean
 Run `pulumi up` in this order:
 
-1. infra
+1. cluster
 2. app/personal_site
 3. cert
 4. network
