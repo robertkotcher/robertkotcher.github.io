@@ -7,17 +7,22 @@
 # Setting up cluster on digitalocean
 Run `pulumi up` in this order:
 
-1. cluster
-2. app/personal_site
-3. cert
-4. network
+## cluster
 
-1 and 2 are pretty straightforward and should work immediately. Once certs
-are generated they shouldn't need to be updated. Finally, mess around with
-network. This one gave the most issues but also I didn't run into any
-rate limiting here.
+The cluster project defines a DO cluster resource, node pools, and node types
 
-# Issues
+It is possible to create pools of different sizes, but for economic reasons
+we'll probably generally be using DropletS1VCPU2GB
 
-- Could not seem to find a way to make LB an http router. I had to
-  update this manually.
+## app
+
+The app project can be deployed once a cluster is available.
+
+Apps are defined in index.ts
+
+Other files, such as types.ts, should only be changed if a new touch point
+is being added to deployments or services
+
+## cert
+## network
+

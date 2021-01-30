@@ -1,0 +1,3 @@
+name: apps
+runtime: nodejs
+description: apps describes all of the applications running our cluster
