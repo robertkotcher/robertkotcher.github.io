@@ -9,10 +9,11 @@ import { config } from './config';
 // accordingly here:
 export const apps: types.Args[] = [
 	{
+		host: 'robertkotcher.me',
+		image: 'wheresmycookie/personal-site',
 		provider: config.provider,
 		name: 'personal-site-webapp',
-		image: 'wheresmycookie/personal-site',
-		selector: 'personal-site-webapp-selector',
+		selector: 'personal-site-selector',
 		replicas: 2,
 		containerPort: 80, // always http - use ssl termination
 	}
