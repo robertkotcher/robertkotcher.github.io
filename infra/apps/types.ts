@@ -10,7 +10,7 @@ const selectorKey = 'app';
 // Args are the parameters that control the touch points of the app wrt the
 // rest of the k8s cluster
 export interface Args {
-	host: string; // The host that this image will be deployed to
+	hosts: string[]; // The host that this image will be deployed to
 	name: string; // The name of this app
 	provider: k8s.Provider; // a kubernetes provider resource
 	image: string; // image to deploy
@@ -78,26 +78,45 @@ export class App extends pulumi.ComponentResource {
 			},
 			spec: {
 				tls: [{
-					hosts: ['robertkotcher.me'],
+					hosts: args.hosts,
 					secretName: 'personal-site-tls'
 				}],
-				rules: [{
-					host: args.host,
-					http: {
-						paths: [{
-							path: '/',
-							pathType: 'Prefix',
-							backend: {
-								service: {
-									name: svc.metadata.name,
-									port: {
-										number: servicePort
+				rules: args.hosts.map(host => {
+					return {
+						host: host,
+						http: {
+							paths: [{
+								path: '/',
+								pathType: 'Prefix',
+								backend: {
+									service: {
+										name: svc.metadata.name,
+										port: {
+											number: servicePort
+										}
 									}
 								}
-							}
-						}]
-					},
-				}]
+							}]
+						},
+					};
+				}),
+				// rules: [{
+				// 	host: args.host,
+				// 	http: {
+				// 		paths: [{
+				// 			path: '/',
+				// 			pathType: 'Prefix',
+				// 			backend: {
+				// 				service: {
+				// 					name: svc.metadata.name,
+				// 					port: {
+				// 						number: servicePort
+				// 					}
+				// 				}
+				// 			}
+				// 		}]
+				// 	},
+				// }]
 			}
 		}, { provider: args.provider });
 	}

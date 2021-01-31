@@ -9,7 +9,10 @@ import { config } from './config';
 // accordingly here:
 export const apps: types.Args[] = [
 	{
-		host: 'robertkotcher.me',
+		hosts: [
+			'www.robertkotcher.me',
+			'robertkotcher.me'
+		],
 		image: 'wheresmycookie/personal-site',
 		provider: config.provider,
 		name: 'personal-site-webapp',
