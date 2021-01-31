@@ -71,9 +71,16 @@ export class App extends pulumi.ComponentResource {
 		// < 1.20 but with DO at least, it doesn't seem to be the case
 		new k8s.networking.v1.Ingress(`${name}-ingress`, {
 			metadata: {
-				name: `${name}-ingress`
+				name: `${name}-ingress`,
+				annotations: {
+					'cert-manager.io/cluster-issuer': 'letsencrypt-prod'
+				}
 			},
 			spec: {
+				tls: [{
+					hosts: ['robertkotcher.me'],
+					secretName: 'personal-site-tls'
+				}],
 				rules: [{
 					host: args.host,
 					http: {

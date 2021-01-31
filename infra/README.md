@@ -35,4 +35,6 @@ For each app, a deployment, service, and ingress resource is created.
 
 ## cert
 
-TODO
+At the moment, cert-manager is just yaml files. If there's a reason to
+encode this with a pulumi project I'll do so at that point.
+
