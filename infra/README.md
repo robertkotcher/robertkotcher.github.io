@@ -1,11 +1,4 @@
-# notes to future self:
-
-- Separate out components early to avoid rate limiting. For example,
-  with robertkotcher.me I hit a rate limit issue with provider &
-  had to manually create the cert on the dashboard.
-
 # Setting up cluster on digitalocean
-Run `pulumi up` in this order:
 
 ## cluster
 
@@ -13,6 +6,21 @@ The cluster project defines a DO cluster resource, node pools, and node types
 
 It is possible to create pools of different sizes, but for economic reasons
 we'll probably generally be using DropletS1VCPU2GB
+
+## cluster-services / ingress
+
+This project installs a DO load balancer that forwards traffic to an
+nginx ingress controller.
+
+The project does not install any ingress resources, but is a prerequisite
+for doing so.
+
+## network
+
+Once we have the IP address of the LB, this project will create an A record
+(and CNAME for www)
+
+TODO: import IP address from helm chart in previous step.
 
 ## app
 
@@ -23,6 +31,8 @@ Apps are defined in index.ts
 Other files, such as types.ts, should only be changed if a new touch point
 is being added to deployments or services
 
-## cert
-## network
+For each app, a deployment, service, and ingress resource is created.
 
+## cert
+
+TODO
