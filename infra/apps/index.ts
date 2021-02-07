@@ -3,22 +3,44 @@ import * as types from './types';
 import { config } from './config';
 
 // apps defines the different apps deployed to this cluster
-// when deploying a new application these are the values that
-// should be modified. If new touchpoints are added, those
-// should be abstracted out in types.App, and values updated
-// accordingly here:
-export const apps: types.Args[] = [
+export const apps: types.AppArgs[] = [
 	{
+		name: 'personal-site-webapp',
+		image: 'wheresmycookie/personal-site',
+		replicas: 2,
+		port: 80, // always http - use ssl termination
+		provider: config.provider,
+
 		hosts: [
 			'www.robertkotcher.me',
 			'robertkotcher.me'
 		],
-		image: 'wheresmycookie/personal-site',
+	},
+	{
+		name: 'personal-site-db',
+		image: 'postgres:10.15',
+		replicas: 1, // must be 1 for pg
+		port: 5432,
 		provider: config.provider,
-		name: 'personal-site-webapp',
-		selector: 'personal-site-selector',
-		replicas: 2,
-		containerPort: 80, // always http - use ssl termination
+
+		env: [{
+			name: 'PGDATA',
+			value: '/var/lib/postgresql/data/pgdata',
+		},{
+			name: 'POSTGRES_PASSWORD',
+			value: 'password',
+		}],
+		volumeMounts: [{
+			mountPath: '/var/lib/postgresql/data',
+			name: 'personal-site-db-volume-123',
+		}],
+		volumes: [{
+			name: 'personal-site-db-volume-123',
+			persistentVolumeClaim: {
+				// See "volumes" project to manage claims / retrieve names
+				claimName: 'personal-pvc',
+			},
+		}]
 	}
 ];
 

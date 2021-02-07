@@ -22,9 +22,9 @@ Once we have the IP address of the LB, this project will create an A record
 
 TODO: import IP address from helm chart in previous step.
 
-## app
+## apps
 
-The app project can be deployed once a cluster is available.
+The apps project can be deployed once a cluster is available.
 
 Apps are defined in index.ts
 
@@ -33,8 +33,14 @@ is being added to deployments or services
 
 For each app, a deployment, service, and ingress resource is created.
 
+### secrets
+
+Secrets are kept logically isolated with the stacks they are
+relevant to. They're "available" to the entire stack as there
+may be multiple running containers who all need access to the
+same secret.
+
 ## cert
 
 At the moment, cert-manager is just yaml files. If there's a reason to
 encode this with a pulumi project I'll do so at that point.
-

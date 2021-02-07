@@ -1,66 +1,74 @@
 import * as pulumi from '@pulumi/pulumi';
 import * as k8s from '@pulumi/kubernetes';
 
-// all services are available on port 80
-const servicePort = 80;
+// kvpair can be used to pass environment variable names or volumen mts, e.g.
+type kvpair = {[key: string]: string};
 
 // the key used to tag and subsequently target a deployment
 const selectorKey = 'app';
 
-// Args are the parameters that control the touch points of the app wrt the
-// rest of the k8s cluster
-export interface Args {
-	hosts: string[]; // The host that this image will be deployed to
+export interface AppArgs {
+	// required
 	name: string; // The name of this app
-	provider: k8s.Provider; // a kubernetes provider resource
 	image: string; // image to deploy
-	selector: string; // tag identifying image
 	replicas: number; // number of replicas of this app to run
-	containerPort: number; // the port that this app is exposed on in container
+	port: number; // the port that this app is exposed on in container
+	provider: k8s.Provider; // a kubernetes provider resource
+	
+	// optional
+	hosts?: string[]; // The host that this image will be deployed to
+						// if none, ingress will not be created.
+	env?: k8s.types.input.core.v1.EnvVar[];
+	volumeMounts?: k8s.types.input.core.v1.VolumeMount[];
+	volumes?: k8s.types.input.core.v1.Volume[];
 }
 
-// An App is a resource that deploys some number of replicas of an image as
-// a deployment and exposes that deployment as a service
 export class App extends pulumi.ComponentResource {
-	constructor(name: string, args: Args, opts: pulumi.ComponentResourceOptions = {}) {
+	constructor(name: string, args: AppArgs, opts: pulumi.ComponentResourceOptions = {}) {
 
 		// This component resource defines apps that live on DO cluster
 		super('rkotcher-do-apps', name, args, opts);
 
 		const serviceName = `${name}-service`;
+		const selectorName = `${args.name}-selector`;
 
-		// create a service providing access to
+		// create a service providing access to underlying deployment
 		const svc = new k8s.core.v1.Service(serviceName, {
 			metadata: {
 				name: serviceName,
 			},
 			spec: {
 				type: 'ClusterIP',
-				selector: { [selectorKey]: args.selector },
+				selector: { [selectorKey]: selectorName },
 				ports: [{
 					name: 'http',
 					protocol: 'TCP',
-					port: servicePort,
-					targetPort: args.containerPort,
+
+					// until there's a reason not to, we'll keep all ports the same.
+					port: args.port,
+					targetPort: args.port,
 				}],
 			},
 		}, { provider: args.provider });
 
 		new k8s.apps.v1.Deployment(name, {
 			spec: {
-				selector: { matchLabels: { [selectorKey]: args.selector }},
+				selector: { matchLabels: { [selectorKey]: selectorName }},
 				replicas: args.replicas,
 				template: {
-					metadata: { labels: { [selectorKey]: args.selector }},
+					metadata: { labels: { [selectorKey]: selectorName }},
 					spec: {
 						containers: [{
 							name: name,
 							image: args.image,
 							ports: [{
-								containerPort: args.containerPort,
+								containerPort: args.port,
 								name: 'http',
 							}],
+							env: args.env,
+							volumeMounts: args.volumeMounts,
 						}],
+						volumes: args.volumes,
 					},
 				},
 			},
@@ -69,56 +77,40 @@ export class App extends pulumi.ComponentResource {
 		// using networking.v1beta1.Ingress because it deprecates
 		// extensions/v1beta1/Ingress, which is supposed to work in k8s cluster
 		// < 1.20 but with DO at least, it doesn't seem to be the case
-		new k8s.networking.v1.Ingress(`${name}-ingress`, {
-			metadata: {
-				name: `${name}-ingress`,
-				annotations: {
-					'cert-manager.io/cluster-issuer': 'letsencrypt-prod'
-				}
-			},
-			spec: {
-				tls: [{
-					hosts: args.hosts,
-					secretName: 'personal-site-tls'
-				}],
-				rules: args.hosts.map(host => {
-					return {
-						host: host,
-						http: {
-							paths: [{
-								path: '/',
-								pathType: 'Prefix',
-								backend: {
-									service: {
-										name: svc.metadata.name,
-										port: {
-											number: servicePort
+		if (args.hosts) {
+			new k8s.networking.v1.Ingress(`${name}-ingress`, {
+				metadata: {
+					name: `${name}-ingress`,
+					annotations: {
+						'cert-manager.io/cluster-issuer': 'letsencrypt-prod'
+					}
+				},
+				spec: {
+					tls: [{
+						hosts: args.hosts,
+						secretName: 'personal-site-tls'
+					}],
+					rules: args.hosts.map(host => {
+						return {
+							host: host,
+							http: {
+								paths: [{
+									path: '/',
+									pathType: 'Prefix',
+									backend: {
+										service: {
+											name: svc.metadata.name,
+											port: {
+												number: args.port,
+											}
 										}
 									}
-								}
-							}]
-						},
-					};
-				}),
-				// rules: [{
-				// 	host: args.host,
-				// 	http: {
-				// 		paths: [{
-				// 			path: '/',
-				// 			pathType: 'Prefix',
-				// 			backend: {
-				// 				service: {
-				// 					name: svc.metadata.name,
-				// 					port: {
-				// 						number: servicePort
-				// 					}
-				// 				}
-				// 			}
-				// 		}]
-				// 	},
-				// }]
-			}
-		}, { provider: args.provider });
+								}]
+							},
+						};
+					}),
+				}
+			}, { provider: args.provider });
+		}
 	}
 }
-
