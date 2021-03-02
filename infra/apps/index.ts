@@ -17,7 +17,7 @@ export const apps: types.AppArgs[] = [
 		],
 	},
 	{
-		name: 'personal-site-db',
+		name: 'cluster-db',
 		image: 'postgres:10.15',
 		replicas: 1, // must be 1 for pg
 		port: 5432,
@@ -32,10 +32,10 @@ export const apps: types.AppArgs[] = [
 		}],
 		volumeMounts: [{
 			mountPath: '/var/lib/postgresql/data',
-			name: 'personal-site-db-volume-123',
+			name: 'cluster-db-volume-123',
 		}],
 		volumes: [{
-			name: 'personal-site-db-volume-123',
+			name: 'cluster-db-volume-123',
 			persistentVolumeClaim: {
 				// See "volumes" project to manage claims / retrieve names
 				claimName: 'personal-pvc',

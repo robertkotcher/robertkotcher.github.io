@@ -13,6 +13,7 @@ export interface AppArgs {
 	image: string; // image to deploy
 	replicas: number; // number of replicas of this app to run
 	port: number; // the port that this app is exposed on in container
+	targetPort?: number; // used if different from port
 	provider: k8s.Provider; // a kubernetes provider resource
 	
 	// optional
@@ -46,7 +47,7 @@ export class App extends pulumi.ComponentResource {
 
 					// until there's a reason not to, we'll keep all ports the same.
 					port: args.port,
-					targetPort: args.port,
+					targetPort: args.targetPort || args.port,
 				}],
 			},
 		}, { provider: args.provider });
@@ -62,7 +63,7 @@ export class App extends pulumi.ComponentResource {
 							name: name,
 							image: args.image,
 							ports: [{
-								containerPort: args.port,
+								containerPort: args.targetPort || args.port,
 								name: 'http',
 							}],
 							env: args.env,
