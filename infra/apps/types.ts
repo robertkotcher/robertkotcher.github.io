@@ -17,7 +17,7 @@ export interface AppArgs {
 	provider: k8s.Provider; // a kubernetes provider resource
 	
 	// optional
-	hosts?: string[]; // The host that this image will be deployed to
+	hosts: string[]; // The host that this image will be deployed to
 						// if none, ingress will not be created.
 	env?: k8s.types.input.core.v1.EnvVar[];
 	volumeMounts?: k8s.types.input.core.v1.VolumeMount[];
@@ -25,6 +25,10 @@ export interface AppArgs {
 }
 
 export class App extends pulumi.ComponentResource {
+	public readonly serviceName!: pulumi.Output<string>;
+	public readonly hosts: string[];
+	public readonly port: number;
+
 	constructor(name: string, args: AppArgs, opts: pulumi.ComponentResourceOptions = {}) {
 
 		// This component resource defines apps that live on DO cluster
@@ -52,6 +56,10 @@ export class App extends pulumi.ComponentResource {
 			},
 		}, { provider: args.provider });
 
+		this.serviceName = svc.metadata.name;
+		this.hosts = args.hosts;
+		this.port = args.port;
+
 		new k8s.apps.v1.Deployment(name, {
 			spec: {
 				selector: { matchLabels: { [selectorKey]: selectorName }},
@@ -74,44 +82,5 @@ export class App extends pulumi.ComponentResource {
 				},
 			},
 		}, { provider: args.provider });
-
-		// using networking.v1beta1.Ingress because it deprecates
-		// extensions/v1beta1/Ingress, which is supposed to work in k8s cluster
-		// < 1.20 but with DO at least, it doesn't seem to be the case
-		if (args.hosts) {
-			new k8s.networking.v1.Ingress(`${name}-ingress`, {
-				metadata: {
-					name: `${name}-ingress`,
-					annotations: {
-						'cert-manager.io/cluster-issuer': 'letsencrypt-prod'
-					}
-				},
-				spec: {
-					tls: [{
-						hosts: args.hosts,
-						secretName: 'personal-site-tls'
-					}],
-					rules: args.hosts.map(host => {
-						return {
-							host: host,
-							http: {
-								paths: [{
-									path: '/',
-									pathType: 'Prefix',
-									backend: {
-										service: {
-											name: svc.metadata.name,
-											port: {
-												number: args.port,
-											}
-										}
-									}
-								}]
-							},
-						};
-					}),
-				}
-			}, { provider: args.provider });
-		}
 	}
 }

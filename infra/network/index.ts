@@ -8,10 +8,17 @@ const domain = new digitalocean.Domain(name, {
     name: 'robertkotcher.me',
 });
 
-const cnameRecord = new digitalocean.DnsRecord('kotcherrobert-cname-record', {
+const www = new digitalocean.DnsRecord('kotcherrobert-cname-record', {
     domain: domain.name,
     type: 'CNAME',
     name: 'www',
+    value: '@',
+});
+
+const dumpall = new digitalocean.DnsRecord('kotcherrobert-dumpall-cname-record', {
+    domain: domain.name,
+    type: 'CNAME',
+    name: 'dumpall',
     value: '@',
 });
 
