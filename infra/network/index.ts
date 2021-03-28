@@ -2,7 +2,7 @@ import * as digitalocean from '@pulumi/digitalocean';
 
 const name = 'robertkotcher-dot-me';
 
-const loadbalancerIP = '157.230.72.71';
+const loadbalancerIP = '138.197.239.222';
 
 const domain = new digitalocean.Domain(name, {
     name: 'robertkotcher.me',

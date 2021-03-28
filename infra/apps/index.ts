@@ -8,34 +8,34 @@ import { Output } from '@pulumi/pulumi';
 
 // apps defines the different apps deployed to this cluster
 export const apps: types.AppArgs[] = [
-	{
-		name: 'cluster-db',
-		image: 'postgres:10.15',
-		replicas: 1, // must be 1 for pg
-		port: 5432,
-		provider: config.provider,
+	// {
+	// 	name: 'cluster-db',
+	// 	image: 'postgres:10.15',
+	// 	replicas: 1, // must be 1 for pg
+	// 	port: 5432,
+	// 	provider: config.provider,
 
-		env: [{
-			name: 'PGDATA',
-			value: '/var/lib/postgresql/data/pgdata',
-		},{
-			name: 'POSTGRES_PASSWORD',
-			value: 'password',
-		}],
-		volumeMounts: [{
-			mountPath: '/var/lib/postgresql/data',
-			name: 'cluster-db-volume-abc',
-		}],
-		volumes: [{
-			name: 'cluster-db-volume-abc',
-			persistentVolumeClaim: {
-				// See "volumes" project to manage claims / retrieve names
-				claimName: 'personal-pvc-5gi',
-			},
-		}],
+	// 	env: [{
+	// 		name: 'PGDATA',
+	// 		value: '/var/lib/postgresql/data/pgdata',
+	// 	},{
+	// 		name: 'POSTGRES_PASSWORD',
+	// 		value: 'password',
+	// 	}],
+	// 	volumeMounts: [{
+	// 		mountPath: '/var/lib/postgresql/data',
+	// 		name: 'cluster-db-volume-abc',
+	// 	}],
+	// 	volumes: [{
+	// 		name: 'cluster-db-volume-abc',
+	// 		persistentVolumeClaim: {
+	// 			// See "volumes" project to manage claims / retrieve names
+	// 			claimName: 'personal-pvc-5gi',
+	// 		},
+	// 	}],
 
-		hosts: [],
-	},
+	// 	hosts: [],
+	// },
 	{
 		name: 'personal-site-webapp',
 		image: 'wheresmycookie/personal-site',
@@ -48,18 +48,18 @@ export const apps: types.AppArgs[] = [
 			'robertkotcher.me'
 		],
 	},
-	{
-		name: 'dump-all',
-		image: 'wheresmycookie/dump-all',
-		replicas: 1,
-		port: 80,
-		targetPort: 3000,
-		provider: config.provider,
+	// {
+	// 	name: 'dump-all',
+	// 	image: 'wheresmycookie/dump-all',
+	// 	replicas: 4,
+	// 	port: 80,
+	// 	targetPort: 3000,
+	// 	provider: config.provider,
 
-		hosts: [
-			'dumpall.robertkotcher.me'
-		]
-	}
+	// 	hosts: [
+	// 		'dumpall.robertkotcher.me'
+	// 	]
+	// }
 ];
 
 // ---------- SHOULD NOT HAVE TO MODIFY BELOW HERE ---------
