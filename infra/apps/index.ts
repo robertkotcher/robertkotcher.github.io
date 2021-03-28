@@ -39,7 +39,7 @@ export const apps: types.AppArgs[] = [
 	{
 		name: 'personal-site-webapp',
 		image: 'wheresmycookie/personal-site',
-		replicas: 1,
+		replicas: 2,
 		port: 80, // always http - use ssl termination
 		provider: config.provider,
 
