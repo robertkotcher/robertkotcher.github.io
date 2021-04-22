@@ -48,18 +48,6 @@ export const apps: types.AppArgs[] = [
 			'robertkotcher.me'
 		],
 	},
-	// {
-	// 	name: 'dump-all',
-	// 	image: 'wheresmycookie/dump-all',
-	// 	replicas: 4,
-	// 	port: 80,
-	// 	targetPort: 3000,
-	// 	provider: config.provider,
-
-	// 	hosts: [
-	// 		'dumpall.robertkotcher.me'
-	// 	]
-	// }
 ];
 
 // ---------- SHOULD NOT HAVE TO MODIFY BELOW HERE ---------

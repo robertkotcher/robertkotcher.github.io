@@ -1,13 +1,13 @@
 import * as pulumi from '@pulumi/pulumi';
 import * as k8s from '@pulumi/kubernetes';
 
-const name = 'personal-pvc-5gi';
+const name1Gi = 'personal-pvc-1gi';
 
-export const pvc5Gi = new k8s.core.v1.PersistentVolumeClaim(
-    name,
+export const pvc1Gi = new k8s.core.v1.PersistentVolumeClaim(
+    name1Gi,
     {
         metadata: {
-            name,
+            name: name1Gi,
         },
         spec: {
             accessModes: [
@@ -15,7 +15,7 @@ export const pvc5Gi = new k8s.core.v1.PersistentVolumeClaim(
             ],
             resources: {
                 requests: {
-                    storage: '5Gi'
+                    storage: '1Gi'
                 }
             },
             storageClassName: 'do-block-storage', // must be this value
