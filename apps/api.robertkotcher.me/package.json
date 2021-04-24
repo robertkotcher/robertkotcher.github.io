@@ -4,7 +4,8 @@
   "description": "serving all fe applications in this cluster",
   "main": "build/index.js",
   "scripts": {
-    "start": "nodemon index.ts",
+    "prod": "node build/index.js",
+    "dev": "nodemon index.ts",
     "build": "tsc --project ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -12,4 +12,4 @@ COPY . .
 RUN yarn build
 
 EXPOSE 8000
-CMD [ "node", "build/index.js" ]
+CMD [ "npm", "run", "prod" ]
