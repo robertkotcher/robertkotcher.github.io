@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: personal-site-ingress
+spec:
+  rules:
+  - host: robertkotcher.me
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: personal-site-service
+          servicePort: 8080
