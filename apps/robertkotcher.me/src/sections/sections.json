@@ -16,19 +16,19 @@
     "items": [
       {
         "image": "synthesis.png",
-        "name": "<a href='https://synthesis.ai/' target='_blank'>Synthesis.ai</a> - <small>Lead, software development</small>",
+        "name": "<a href='https://synthesis.ai/' target='_blank'>Synthesis.ai</a> - <small>second engineering hire</small>",
         "tags": ["kubernetes", "golang", "node js"],
         "description": ["Synthesis AI is building a platform for programmatic generation of synthetic ML data."]
       },
       {
         "image": "codecov.jpg",
-        "name": "<a href='https://codecov.io/' target='_blank'>Codecov</a> - <small>product research</small>",
+        "name": "<a href='https://codecov.io/' target='_blank'>Codecov</a> - <small>research and development</small>",
         "tags": ["software_profiling"],
         "description": ["I'm currently working with Codecov to prototype experimental code coverage tools and features for future integration into the core Codecov product."]
       },
       {
         "image": "moment.png",
-        "name": "<a href='https://inthemoment.io/' target='_blank'>Moment</a> - <small>first hire</small>",
+        "name": "<a href='https://inthemoment.io/' target='_blank'>Moment</a> - <small>first engineering hire</small>",
         "tags": ["startups", "scalability", "big query", "node js", "startups"],
         "description": [
           "Moment's first product has over 8 million active users, and I maintained the backend infrastructure. I was involved in daily product discussions, where I aim to keep a lean and focused product. Moment's vision is to reduce wasted screentime and instead help users focus on their real-life relationships."
