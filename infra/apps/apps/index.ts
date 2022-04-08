@@ -48,6 +48,17 @@ export const apps: types.AppArgs[] = [
 			'robertkotcher.me'
 		],
 	},
+	{
+		name: 'personal-site-blog',
+		image: 'wheresmycookie/personal-blog',
+		replicas: 2,
+		port: 4000, // always http - use ssl termination
+		provider: config.provider,
+
+		hosts: [
+			'blog.robertkotcher.me'
+		],
+	},
 ];
 
 // ---------- SHOULD NOT HAVE TO MODIFY BELOW HERE ---------
