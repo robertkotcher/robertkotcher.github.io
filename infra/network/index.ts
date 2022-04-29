@@ -15,6 +15,13 @@ const www = new digitalocean.DnsRecord('kotcherrobert-cname-record', {
     value: '@',
 });
 
+const blog = new digitalocean.DnsRecord('kotcherrobert-blog-cname-record', {
+    domain: domain.name,
+    type: 'CNAME',
+    name: 'blog',
+    value: '@',
+});
+
 const dumpall = new digitalocean.DnsRecord('kotcherrobert-dumpall-cname-record', {
     domain: domain.name,
     type: 'CNAME',

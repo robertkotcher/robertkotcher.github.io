@@ -1,10 +1,5 @@
-FROM node:12-alpine3.10
-
-WORKDIR /usr/src/app
-
-RUN npm install hexo-cli
-RUN npm install node-sass
+FROM python:3.11-rc-alpine3.14
+WORKDIR /app
 COPY . .
-
-EXPOSE 4000
-CMD [ "./node_modules/hexo-cli/bin/hexo", "server", "-p", "80" ]
+EXPOSE 80
+CMD [ "python", "-m", "http.server", "80" ]

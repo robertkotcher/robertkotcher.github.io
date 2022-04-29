@@ -1,7 +1,10 @@
 <template>
   <div v-if="shouldRender()" id="travel-map">
     <img src="../../assets/travel-map.png"/>
-    <small>Blue denotes places that I have visited.</small>
+		<div class="map-footer">
+			<small>Blue denotes places that I have visited.</small>
+			<small>Languages spoken: español, <a href="https://blog.robertkotcher.me" target="_blank">我在学习中文</a></small>
+		</div>
   </div>
 </template>
 
@@ -27,4 +30,10 @@
     width: 100%;
     border: 1px dashed #ccc;
   }
+
+	.map-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 </style>

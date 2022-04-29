@@ -1,0 +1,331 @@
+<html>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			font-family: cursive, sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+			color: #222;
+			margin: 0 12px;
+		}
+
+		.container {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			height: 100vh;
+		}
+
+		.left-pane {
+			width: 15%;
+			background-image: url("peakpx.jpg");
+			border-right: 1px solid #444;
+			height: 100%;
+			background-color: red;
+		}
+
+		@media screen and (max-width: 860px) {
+    		.left-pane {
+        		display: none !important;
+    		}
+		}
+
+		.right-pane {
+			flex: 1;
+			overflow: scroll;
+		}
+
+		.nav {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 12px;
+			height: 60px;
+			width: 100%;
+			font-size: 22px;
+		}
+
+		.section {
+			padding: 22px;
+		}
+
+		.section-title > .languages-container {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.section-title > .languages-container > .cn {
+			font-size: 28px;
+			line-height: 1.4;
+		}
+
+		.section-title > .languages-container > .py, .section-title > .languages-container > .es {
+			font-size: 22px;
+		}
+
+		.section-body > .languages-container {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.section-body > .languages-container > .cn {
+			font-size: 20px;
+			line-height: 1.3;
+		}
+
+		.section-body > .languages-container > .py, .section-body > .languages-container > .es {
+			font-size: 12px;
+		}
+
+		.section-date {
+			font-weight: 100;
+			color: #333;
+		}
+
+		.cn {
+			flex: 1;
+			margin-bottom: 14px;
+			margin-right: 14px;
+		}
+
+		.py {
+			flex: 1;
+			margin-bottom: 14px;
+			font-family: 'Noto Serif', serif;
+		}
+
+		.es {
+			flex: 1;
+			margin-bottom: 14px;
+			margin-left: 14px;
+			font-family: 'Noto Serif', serif;
+		}
+
+		@media screen and (max-width: 860px) {
+    		.py {
+        		display: none !important;
+    		}
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="left-pane"></div>
+			<div class="right-pane">
+				<div class="nav">
+					<a target="_blank" href="https://www.robertkotcher.me">关于罗伯特</a>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								Wisconsin 的天气很奇怪
+							</div>
+							<div class="py">
+								Wisconsin de tiānqì hěn qíguài
+							</div>
+							<div class="es">
+								El clima de Wisconsin es raro
+							</div>
+						</div>
+					</div>
+					<div class="section-date">
+						2022-04-25
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们这个星期在Wisconsin. 我们会住在这里两个星期。今天是第五天。每天的天气都是不同的。
+							</div>
+							<div class="py">
+								Wǒmen zhège xīngqí zài Wisconsin. Wǒmen huì zhù zài zhèlǐ liǎng gè xīngqí. Jīntiān shì dì wǔ tiān. Měitiān dū yǒu bùtóng de tiānqì.
+							</div>
+							<div class="es">
+								Estamos en Wisconsin esta semana, vamos a quedarnos aqui dos semanas. Hoy es el quinto día. Cada día el clima es diferente.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我们到达的时候有很多雪。虽然现在是四月，但我们到达的时候有很雪。第一天感觉像冬天。
+							</div>
+							<div class="py">
+								Wǒmen dàodá de shíhòu yǒu hěnduō xuě. Suīrán xiànzài shì sì yuè, dàn wǒmen dàodá de shíhòu yǒu hěn xuě. Dì yī tiān gǎnjué xiàng dōngtiān.
+							</div>
+							<div class="es">
+								Había mucha nieve cuando llegamos. Aunque era abril, estaba nevando cuando llegamos. El primer día se sintió a invierno.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第二天是晴天。这天像夏天。
+							</div>
+							<div class="py">
+								Dì èr tiān shì qíngtiān. Zhè tiān xiàng xiàtiān.
+							</div>
+							<div class="es">
+								El día siguiente estaba soleado. Este día era como el verano.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第三天有很多云和很多雨。但是我没有看到彩虹因为第三天没有太阳。第三天像春天。
+							</div>
+							<div class="py">
+								Dì sān tiān yǒu hěnduō yún hé hěnduō yǔ. Dànshì wǒ méiyǒu kàn dào cǎihóng yīnwèi dì sān tiān méiyǒu tàiyáng. Dì sān tiān xiàng chūntiān.
+							</div>
+							<div class="es">
+								El tercer día estuvo nublado y lluvioso. Pero no vi un arco iris porque no había sol en el tercer día. El tercer día es como la primavera.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第四天是晴天。这天很热。
+							</div>
+							<div class="py">
+								Dì sì tiān shì qíngtiān. Zhè tiān hěn rè.
+							</div>
+							<div class="es">
+								El cuarto día fue soleado. Fue un día caluroso.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								今天很冷和有很多云。
+							</div>
+							<div class="py">
+								Jīntiān hěn lěng hé yǒu hěnduō yún.
+							</div>
+							<div class="es">
+								Hace frío y está nublado hoy.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								Wisconsin 的天气很奇怪。
+							</div>
+							<div class="py">
+								Wisconsin de tiānqì hěn qíguài.
+							</div>
+							<div class="es">
+								El clima de Wisconsin es extraño.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								学习语言很难
+							</div>
+							<div class="py">
+								Xuéxí yǔyán hěn nán
+							</div>
+							<div class="es">
+								Aprender un idioma es difícil
+							</div>
+						</div>
+					</div>
+					<div class="section-date">
+						2022-04-10
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我在中学的时候，我的老师说需要听新词八十次才可以记住它。
+							</div>
+							<div class="py">
+								Wǒ zài zhōngxué de shíhòu, wǒ de lǎoshī shuō xūyào tīng xīn cí bāshí cì cái kěyǐ jì zhù tā.
+							</div>
+							<div class="es">
+								Cuando estaba en la escuela secundaria, mi profesora me dijo que "necesitas escuchar una palabra nueva ochenta veces para memorizarla".
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我在中学的时候，我不是很擅长学习语言。
+							</div>
+							<div class="py">
+								Wǒ zài zhōngxué de shíhòu, wǒ bùshì hěn shàncháng xuéxí yǔyán.
+							</div>
+							<div class="es">
+								Cuando estaba en la escuela secundaria, no era muy bueno en aprender idiomas.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								但是我从没用新词八十次。
+							</div>
+							<div class="py">
+								Dànshì wǒ cóng méi yòng xīn cí bāshí cì.
+							</div>
+							<div class="es">
+								Pero nunca usé mis palabra nuevas ochenta veces.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								你不能从考试中学习语言。
+							</div>
+							<div class="py">
+								Nǐ bùnéng cóng kǎoshì zhōng xuéxí yǔyán.
+							</div>
+							<div class="es">
+								No se pueden aprender idiomas solo con exámenes.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我现在不会为了考试而学习语言。
+							</div>
+							<div class="py">
+								Wǒ xiànzài bù huì wèile kǎoshì ér xuéxí yǔyán.
+							</div>
+							<div class="es">
+								No voy a estudiar idiomas para los exámenes ahora.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我觉得学习语言更好的方法是用这门语言和从记住中学习。
+							</div>
+							<div class="py">
+								Wǒ juédé xuéxí yǔyán gèng hǎo de fāngfǎ shì yòng zhè mén yǔyán hé cóng jì zhù zhōng xuéxí.
+							</div>
+							<div class="es">
+								Creo que una mejor manera de aprender un idioma es usar el idioma.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我现在不在数我的新词了。
+							</div>
+							<div class="py">
+								Wǒ xiànzài bùzài shù wǒ de xīn cíle.
+							</div>
+							<div class="es">
+								No estoy contando mis nuevas palabras ahora.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
