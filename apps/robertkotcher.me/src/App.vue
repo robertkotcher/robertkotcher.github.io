@@ -1,39 +1,44 @@
 <template>
-  <v-app id="root">
-    <v-sheet
-      :elevation="4"
-      class="root-level-content-wrapper main-padding"
-    >
-      <router-view/>
-    </v-sheet>
-  </v-app>
+  <div id="root" :class="{ centered: !tagStore.state.activeTag }">
+    <router-view/>
+  </div>
 </template>
 
 <script>
+  import tagStore from './TagStore';
+
   export default {
-    name: 'App'
+    name: 'App',
+    data: () => {
+      return {
+        tagStore: tagStore
+      };
+    },
   };
 </script>
 
 <style>
   #root {
-    background: url(./assets/background.png);
-    background-repeat: repeat;
+    overflow: scroll;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     display: flex;
+    padding: 18px;
     flex-direction: column;
-    align-items: center;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    padding: 28px;
+  }
+
+  .centered {
+    justify-content: center;
+    align-items: center;
   }
 
   .root-level-content-wrapper {
-    max-width: 800px;
-  }
-  .main-padding {
-    padding: 58px;
+    max-width: 960px;
   }
   .space-before-next {
     margin-bottom: 28px;
@@ -42,6 +47,7 @@
   /* This is purposefully site-wide */
   a {
     text-decoration: none !important;
+    color: #00e;
   }
 
   @media only screen and (max-width: 650px) {

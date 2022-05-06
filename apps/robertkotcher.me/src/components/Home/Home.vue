@@ -1,22 +1,21 @@
 <template>
   <div>
-    <FilterMessage/>
     <Header/>
-    <Body :sections="sections"/>
-    <WorldMap/>
+    <Body
+      v-if="tagStore.state.activeTag"
+      :sections="sections"
+    />
   </div>
 </template>
 
 <script>
   import sections from '../../sections/sections.json';
 
-  import TagStore from '../../TagStore';
+  import TagStore from '../../TagStore';  
   import { getUrlParams } from '../../util/url';
 
-  import FilterMessage from './FilterMessage.vue';
   import Header from './Header.vue';
   import Body from './Body.vue';
-  import WorldMap from './WorldMap.vue';
 
   TagStore.setPossibleTags(sections);
 
@@ -28,15 +27,14 @@
   export default {
     name: 'Home',
     components: {
-      FilterMessage,
       Header,
       Body,
-      WorldMap,
     },
     data: () => {
       return {
         sections: sections,
+        tagStore: TagStore,
       };
-    }
+    },
   };
 </script>

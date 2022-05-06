@@ -1,18 +1,10 @@
 <template>
-  <v-alert
+  <span 
+    class="filter-message"
     v-if="tagStore.state.activeTag"
-    class="alert"
-    dismissible
-    color="pink"
-    dark
-    icon="mdi-tag"
-    transition="scale-transition"
   >
-    Filtering for "{{ tagStore.state.activeTag }}" items.
-    <template v-slot:close>
-      <v-btn text small @click="removeTag">Remove</v-btn>
-    </template>
-  </v-alert>
+    <span class="filter-text">Showing {{count}} results for tag <strong>{{tag}}</strong>.</span>
+  </span>
 </template>
 
 <script>
@@ -27,17 +19,29 @@
       return {
         tagStore: tagStore
       };
+    },
+    props: {
+      tag: { type: String },
+      count: { type: Number },
+      sections: {
+        type: Array,
+        default: () => []
+      }
     }
   }
 </script>
 
 <style scoped>
-  .alert {
-    position: fixed;
-    top: 18px;
-    right: 18px;
-    width: calc(100% - 36px);
-    background-color: #fff;
-    z-index: 1000000;
+  .filter-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .filter-text {
+    margin-right: 8px;
+    font-size: 12px;
   }
 </style>

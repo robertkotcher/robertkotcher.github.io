@@ -6,19 +6,27 @@ const tagStore = {
   state: {
     activeTag: null,
     possibleTags: null,
+    tagCounts: {},
   },
   setPossibleTags: function(sections) {
-    const tags = {};
+    var tags = {};
 
     sections.forEach(section => {
       section.items.forEach(item => {
         item.tags.forEach(tag => {
-          tags[tag] = true;
+          if (tags[tag]) {
+            tags[tag] += 1;
+          } else {
+            tags[tag] = 1;
+          }
         })
       })
     });
 
-    this.state.possibleTags = Object.keys(tags).sort();
+    this.state.possibleTags = Object.keys(tags).sort((a, b) => {
+      return tags[b] - tags[a];
+    });
+    this.state.tagCounts = tags;
   },
   setActiveTag: function(tag) {
     setSingleUrlParam(window, { tag });

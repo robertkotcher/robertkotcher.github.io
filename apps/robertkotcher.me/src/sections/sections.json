@@ -3,6 +3,8 @@
     "items": [
       {
         "image": "carnegie_mellon.png",
+        "start": 2008,
+        "end": 2012,
         "name": "Carnegie Mellon University",
         "tags": ["computer science", "music"],
         "description": [
@@ -15,51 +17,62 @@
     "name": "Industry Experience",
     "items": [
       {
+        "start": 2020,
         "image": "synthesis.png",
         "name": "<a href='https://synthesis.ai/' target='_blank'>Synthesis.ai</a> - <small>second engineering hire</small>",
-        "tags": ["kubernetes", "golang", "node js"],
+        "tags": ["industry", "kubernetes", "golang", "node js"],
         "description": ["Synthesis AI is building a platform for programmatic generation of synthetic ML data."]
       },
       {
+        "start": 2020,
         "image": "codecov.jpg",
         "name": "<a href='https://codecov.io/' target='_blank'>Codecov</a> - <small>research and development</small>",
-        "tags": ["software_profiling"],
+        "tags": ["industry", "software_profiling"],
         "description": ["I'm currently working with Codecov to prototype experimental code coverage tools and features for future integration into the core Codecov product."]
       },
       {
+        "start": 2019,
+        "end": 2020,
         "image": "moment.png",
         "name": "<a href='https://inthemoment.io/' target='_blank'>Moment</a> - <small>first engineering hire</small>",
-        "tags": ["startups", "scalability", "big query", "node js", "startups"],
+        "tags": ["industry", "startups", "scalability", "big query", "node js", "startups"],
         "description": [
           "Moment's first product has over 8 million active users, and I maintained the backend infrastructure. I was involved in daily product discussions, where I aim to keep a lean and focused product. Moment's vision is to reduce wasted screentime and instead help users focus on their real-life relationships."
         ]
       },
       {
+        "start": 2018,
+        "end": 2019,
         "image":  "adrich.jpg",
         "name": "<a href='https://www.adrich.io' target='_blank'>Adrich</a> - <small>founding software engineer</small>",
-        "tags": ["startups", "node js", "react js", "ios", "android", "bluetooth", "multi-tenancy", "java", "objective c"],
+        "tags": ["industry", "startups", "node js", "react js", "ios", "android", "bluetooth", "multi-tenancy", "java", "objective c"],
         "description": [
           "Adrich graduated from <a target='_blank' href='https://alphalabgear.org/'>AlphaLab Gear</a> and <a target='_blank' href='https://www.plugandplaytechcenter.com/'>Plug & Play Accelerator</a> in Silicon Valley. I was a founding software engineer, responsible for architecting our services and building the Android and iOS apps."
         ]
       },
       {
+        "start": 2017,
+        "end": 2018,
         "image":  "expii.png",
         "name": "<a href='https://www.expii.com/' target='_blank'>Expii</a> - <small>second hire</small>",
-        "tags": ["startups", "flask", "react js"],
+        "tags": ["industry", "startups", "flask", "react js"],
         "description": [
           "I was a full-stack developer for Carnegie Mellon math professor <a target='_blank' href='https://www.poshenloh.com/'>Po-Shen Loh's</a> math and science startup."
         ]
       },
       {
+        "start": 2015,
+        "end": 2016,
         "image": "nasa.png",
         "name": "<a href='https://www.nasa.gov/centers/armstrong/home/index.html' target='_blank'>NASA</a> - <small>software engineer</small>",
-        "tags": ["java", "flight school"],
+        "tags": ["industry", "java", "flight school"],
         "description": ["In total, I spent about a year and a half at NASA's Armstrong Flight Research Facility at Edwards Air Force Base. I was working on <a target='_blank' href='https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007770.pdf'>ADS-B flight software</a> through <a href='https://technology-afrc.ndc.nasa.gov/featurestory/tech-awards'>UAS in the NAS</a>."]
       },
       {
         "image": "tunessence.png",
+        "end": 2014,
         "name": "<a href='http://archive.jsonline.com/business/hal-leonard-acquires-guitar-teaching-start-up-tunessence-b99492296z1-302168401.html' target='_blank'>Tunessence</a> - <small>first hire</small>",
-        "tags": ["startups"],
+        "tags": ["industry", "startups"],
         "description": ["I was the first hire at Tunessence while I was a student at Carnegie Mellon. The company was acquired by Hal-Leonard."]
       }
     ]
@@ -68,33 +81,41 @@
     "name": "Personal projects",
     "items": [
       {
+        "start": 2021,
+        "end": 2021,
         "image": "lambda.png",
         "name": "<a target='_blank' href='https://www.npmjs.com/package/js-to-lambda'>Javascript to λ-calculus transpiler</a>",
-        "tags": ["computer science"],
+        "tags": ["old", "computer science"],
         "description": ["This transpiler can take a Javascript function and convert it to λ-calculus. It currently operates on a subset of the Javascript language, but I'm curious to see how far it can be taken.", "This is a project that I've open-sourced and published to npm."]
       },
       {
+        "start": 2019,
+        "end": 2019,
         "image": "npm.png",
         "name": "<a target='_blank' href='https://www.npmjs.com/package/multi-tenant-migrate'>Multi-Tenant Migrate</a>",
-        "tags": ["multi-tenancy", "postgresql", "node js"],
+        "tags": ["old", "multi-tenancy", "postgresql", "node js"],
         "description": ["I built a multi-tenant migration system that works with node.js and postgresql. It was modeled after <a target='_blank' href='https://django-tenant-schemas.readthedocs.io/en/latest/use.html'>django-tenant-schemas</a> (a multi-tenant migration system for Django)."]
       },
       {
+        "start": 2018,
+        "end": 2018,
         "image": "quadratic.png",
         "name": "<a target='_blank' href='https://v1.expii.com/editor/create/explanation/9019'>Math and Science Editor</a>",
-        "tags": ["react js"],
+        "tags": ["old", "react js"],
         "description": ["I built this application for Expii.com as a standalone project. I wanted to list it here because it's something I'm particularly proud of that showcases my front-end development skillset. Note that you'll have to connect with Facebook first."]
       },
       {
         "image": "profile.png",
         "name": "<a target='_blank' href='/'>Personal Website</a>",
-        "tags": ["vue js"],
+        "tags": ["old", "vue js"],
         "description": ["I did a rewrite of my personal website using <a href='_blank'>Vue.js</a> to get a break from using React.js. You can find a link to the source code <a target='_blank' href='https://bitbucket.org/rkotcher/personal-site-vue/src/master/'>here</a>."]
       },
       {
+        "start": 2012,
+        "end": 2012,
         "image": "spatianator.png",
         "name": "<a target='_blank' href='https://youtu.be/WYzedx83qYM'>Spatianator</a>",
-        "tags": ["microcontroller", "raspberry pi"],
+        "tags": ["old", "microcontroller", "raspberry pi"],
         "description": ["This is an art project that showcases the little bit of work that I've done with hardware. We built four robots (this video shows only one) that communicated over a network and 'activated' the sounds characteristic of the space they were in."]
       }
     ]
@@ -103,33 +124,43 @@
     "name": "Essays",
     "items": [
       {
+        "start": 2020,
+        "end": 2020,
         "image": "rnn.png",
         "name": "<a target='_blank' href='/posts/recurrent-neural-networks'>Fun with Recurrent Neural Networks</a>",
-        "tags": ["deep learning", "recurrent neural networks"],
+        "tags": ["learning", "deep learning", "recurrent neural networks"],
         "description": ["I walk through the architecture of two different recurrent neural networks and describe their use cases."]
       },
       {
+        "start": 2020,
+        "end": 2020,
         "image": "cryptokitty.png",
         "name": "<a target='_blank' href='/posts/deep-cryptokitties'>Deep Cryptokitties</a>",
-        "tags": ["deep learning", "general adversarial networks"],
+        "tags": ["learning", "deep learning", "general adversarial networks"],
         "description": ["In this post I explore the various parameters of simple general adversarial networks (GANs), using cryptokitties as inspiration."]
       },
       {
+        "start": 2020,
+        "end": 2020,
         "image": "svm.png",
         "name": "<a target='_blank' href='/posts/large-margin-classifiers'>Intuition behind large margin classification</a>",
-        "tags": ["machine learning", "svm"],
+        "tags": ["learning", "machine learning", "svm"],
         "description": ["This essay lays the groundwork for understanding large margin classifiers (Support Vector Machines). It describes both the motivation as well as a geometric interpretation."]
       },
       {
+        "start": 2020,
+        "end": 2020,
         "image": "nn.png",
         "name": "<a target='_blank' href='/posts/vanilla-neural-network'>I made a vanilla neural network from scratch</a>",
-        "tags": ["machine learning", "deep learning"],
+        "tags": ["learning", "machine learning", "deep learning"],
         "description": ["This project started with the intention to calculate a few derivatives and translate those over to python code. In the end, I learned so much that it seemed worthwhile to write down every last detail to ensure that my future self would be able to revisit what I did without any confusion."]
       },
       {
+        "start": 2019,
+        "end": 2019,
         "image": "svd.png",
         "name": "<a target='_blank' href='/posts/singular-value-decomposition'>Singular Value Decomposition: Two Perspectives</a>",
-        "tags": ["linear algebra"],
+        "tags": ["learning", "linear algebra"],
         "description": ["SVD breaks a matrix into two matrics of orthonormal vectors and an inner matrix of singular values. I wanted to explore what that really means."]
       }
     ]
@@ -138,15 +169,19 @@
     "name": "Publications",
     "items": [
       {
+        "start": 2014,
+        "end": 2014,
         "image": "oauth.png",
         "name": "<a href='https://www.researchgate.net/publication/266022550_OAuth_Demystified_for_Mobile_Application_Developers'>OAuth Demystified for Mobile Applications</a>",
-        "tags": ["security", "oauth"],
+        "tags": ["old", "security", "oauth"],
         "description": ["This paper, which I worked on with researchers from Carnegie Mellon and Microsoft, studies OAuth's wide industry adoption and vulnerabilities that have been opened as a result of loose interpretation of the protocols."]
       },
       {
+        "start": 2013,
+        "end": 2013,
         "image": "timing_attack.png",
         "name": "<a href='https://www.semanticscholar.org/paper/Cross-origin-pixel-stealing%3A-timing-attacks-using-Kotcher-Pei/66a6b8b5086454d2f511089ed3c157075239eb7d?navId=paper-header'>Cross-Origin Pixel Stealing: Timing Attacks Using CSS Filters</a>",
-        "tags": ["security", "timing attacks"],
+        "tags": ["old", "security", "timing attacks"],
         "description": ["There are a number of older articles that I decided against including on this page, but I couldn't resist this timing attack that I discovered. It has been highly cited since publication."]
       }
     ]
@@ -155,24 +190,41 @@
     "name": "Miscellaneous",
     "items": [
       {
+        "start": 2021,
+        "name": "<a target='_blank' href='https://blog.robertkotcher.me'>Language learning</a>",
+        "tags": ["languages", "spanish", "chinese"],
+        "description": [
+          "Having lived in both Costa Rica and Spain, I'm fairly conversational in Spanish by this point. I take Chinese lessons twice per week, and have been since the summer of 2021.",
+          "Here is a journal that I try to maintain where I start in Chinese and translate to Spanish: <a target='_blank' href='https://blog.robertkotcher.me'>https://blog.robertkotcher.me</a>"
+        ]
+      },
+      {
+        "start": 2014,
+        "end": 2014,
         "name": "<a target='_blank' href='https://vigilantaerospace.com/wp-content/uploads/2017/06/Application-of-an-ADS-B-Sense-and-Avoid-Algorithm_AFRC-E-DAA-TN30918_20160007770_opt.pdf'>Federal Laboratory Consortium, Denver</a>",
-        "tags": ["java"],
+        "tags": ["old", "java"],
         "description": ["Selected for the Outstanding Technology Development award for work on ADS-B software at NASA."]
       },
       {
+        "start": 2014,
+        "end": 2014,
         "name": "<a target='_blank' href='https://evernote.com/security/report-issue'>Evernote Hall of Fame</a>",
-        "tags": ["security", "oauth"],
+        "tags": ["old", "security", "oauth"],
         "description": ["Received bug bounty for a mobile Oauth attack on Evernote."]
       },
       {
+        "start": 2014,
+        "end": 2014,
         "name": "<a target='_blank' href='https://www.facebook.com/whitehat/thanks/'>Facebook Hall of Fame</a>",
-        "tags": ["security", "oauth"],
+        "tags": ["old", "security", "oauth"],
         "description": ["Received bug bounty for a mobile Oauth attack on Facebook."]
       },
       {
+        "start": 2012,
+        "end": 2012,
         "image": "millennial_masters.png",
         "name": "Millennial Masters, Vol 3",
-        "tags": ["music composition"],
+        "tags": ["old", "music composition"],
         "description": [
           "In addition to software, I write and perform classical music (violin). Here's a link to my <a target='_blank' href='https://open.spotify.com/track/4c7kpmISQTpYX0adLJaOeb?si=75c9da02d70d4044'>Violin Sonata No 1</a>, performed by <a target='_blank' href='http://www.incontrimusicali.com/current-artists/2017/6/28/emma-steele-violin-usa'>Emma Steele</a> and <a target='_blank' href='https://www.cmu.edu/cfa/music/people/Bios/sargsyan_vahan.html'>Vahan Sargsyan</a>. You can find other recordings on my <a target='_blank' href='https://www.youtube.com/user/rkotcher/videos'>Youtube channel</a>."
         ]
