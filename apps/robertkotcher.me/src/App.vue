@@ -1,5 +1,5 @@
 <template>
-  <div id="root" :class="{ centered: !tagStore.state.activeTag }">
+  <div id="root" :class="{ centered: shouldCenter() }">
     <router-view/>
   </div>
 </template>
@@ -13,6 +13,11 @@
       return {
         tagStore: tagStore
       };
+    },
+    methods: {
+      shouldCenter: function() {
+        return window.location.pathname === '/' && !tagStore.state.activeTag;
+      },
     },
   };
 </script>
