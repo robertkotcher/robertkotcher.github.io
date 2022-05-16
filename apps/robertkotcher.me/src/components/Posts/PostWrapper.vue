@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="post-wrapper">
     <!-- px-0 is a Material Design formatted classname -->
     <v-breadcrumbs class="px-0" :items="items"/>
     <router-view/>
@@ -27,3 +27,9 @@
     }
   };
 </script>
+
+<style>
+	#post-wrapper p {
+		margin: 12px 0;
+	}
+</style>
