@@ -190,12 +190,23 @@
     "name": "Miscellaneous",
     "items": [
       {
+        "start": 2022,
+        "end": 2022,
+        "name": "<a target='_blank' href='https://github.com/robertkotcher/goml2/blob/master/main.go'>goml2: Decision Trees</a>",
+        "tags": ["learning", "machine learning", "golang"],
+        "description": [
+					"Over time I hope to build a comprehensive machine learning library in Go. So far, I have implemented Decision Trees with Cost-Complexity Pruning, both for classification and regression.",
+          "At <a target='_blank' href='https://synthesis.ai'>Synthesis AI</a> I shared my work so far at a knowledge exchange meeting, where we talk about things we're learning about outside of work. Here are my slides from that: <a target='_blank' href='goml2.pdf'>Decision Trees with Goml2</a>"
+				]
+      },
+      {
         "start": 2021,
-        "name": "<a target='_blank' href='https://blog.robertkotcher.me'>Language learning</a>",
+        "name": "<a target='_blank' href='https://blog.robertkotcher.me'>Language learning blog</a>",
         "tags": ["languages", "spanish", "chinese"],
         "description": [
-          "Having lived in both Costa Rica and Spain, I'm fairly conversational in Spanish by this point. I take Chinese lessons twice per week, and have been since the summer of 2021.",
-          "Here is a journal that I try to maintain where I start in Chinese and translate to Spanish: <a target='_blank' href='https://blog.robertkotcher.me'>https://blog.robertkotcher.me</a>"
+          "我每周写关于一个新想法",
+          "Wǒ měi zhōu xiě guānyú yīgè xīn xiǎngfǎ",
+          "Cada semana escribo sobre algo."
         ]
       },
       {

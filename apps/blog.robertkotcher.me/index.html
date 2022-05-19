@@ -3,13 +3,13 @@
 	<title>我的日记 - Wǒ de rìjì - Mi diario</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 	<style>
 		html,body {
 			margin: 0;
 			padding: 0;
 			height: 100vh;
-			font-family: cursive, sans-serif;
+			font-family: 'Noto Serif SC', sans-serif;
 		}
 
 		a {
@@ -18,26 +18,23 @@
 			margin: 0 12px;
 		}
 
+		indent {
+			margin-left: 22px;
+		}
+
+		.attention {
+			background-color: rgb(224, 90, 199);
+			padding: 2px 6px;
+			border-radius: 6px;
+			color: white;
+		}
+
 		.container {
 			position: fixed;
 			width: 100%;
 			height: 100%;
 			display: flex;
 			height: 100vh;
-		}
-
-		.left-pane {
-			width: 15%;
-			background-image: url("peakpx.jpg");
-			border-right: 1px solid #444;
-			height: 100%;
-			background-color: red;
-		}
-
-		@media screen and (max-width: 860px) {
-    		.left-pane {
-        		display: none !important;
-    		}
 		}
 
 		.right-pane {
@@ -75,13 +72,16 @@
 
 		.section-title > .languages-container > .py, .section-title > .languages-container > .es {
 			font-size: 22px;
+			font-family: sans-serif;
 		}
 
 		.section-body > .languages-container {
+			padding: 7px 0;
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+			border-bottom: 1px dashed #eee;
 		}
 
 		.section-body > .languages-container > .cn {
@@ -90,7 +90,8 @@
 		}
 
 		.section-body > .languages-container > .py, .section-body > .languages-container > .es {
-			font-size: 12px;
+			font-size: 16px;
+			font-family: sans-serif;
 		}
 
 		.section-date {
@@ -137,10 +138,339 @@
 	</style>
 	<body>
 		<div class="container">
-			<div class="left-pane"></div>
 			<div class="right-pane">
 				<div class="nav">
 					<a target="_blank" href="https://www.robertkotcher.me">关于罗伯特</a>
+				</div>
+				<div class="section">
+					<div class="section-date">
+						2022-05-18
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								五十常用动词的句子
+							</div>
+							<div class="py">
+								Wǔshí chángyòng dòngcí de jùzi
+							</div>
+							<div class="es">
+								50 oraciones con verbos comunes
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我看到一个语言网站叫 “50常用动词“。我尝试在这个作业用它们。
+							</div>
+							<div class="py">
+								Wǒ kàn dào yīgè yǔyán wǎngzhàn jiào “50 chángyòng dòngcí “. Wǒ chángshì zài zhège zuòyè yòng tāmen.
+							</div>
+							<div class="es">
+								Ví un sitio web que se llama "50 verbos comunes". Intento usarlos en ese tarea.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>长大</indent>: 我在匹兹堡长大。
+							</div>
+							<div class="py">
+								<indent>Zhǎng dà</indent>: Wǒ zài pǐzībǎo zhǎng dà.
+							</div>
+							<div class="es">
+								<indent>Crecer</indent>: Yo crecí en Pittsburgh.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>跟</indent>: 请跟我来 / 请跟我说 / 请跟我走 / 我跟你一起玩
+							</div>
+							<div class="py">
+								<indent>Gēn</indent>: Qǐng gēn wǒ lái / qǐng gēn wǒ shuō / qǐng gēn wǒ zǒu / wǒ gēn nǐ yīqǐ wán。
+							</div>
+							<div class="es">
+								
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>稍等</indent>: 请等一下
+							</div>
+							<div class="py">
+								<indent>Shāo děng</indent>: Qǐng děng yīxià
+							</div>
+							<div class="es">
+								<indent>Esperar</indent>: Espera
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>点</indent>: 我想要点一条鱼。
+							</div>
+							<div class="py">
+								<indent>Diǎn</indent>: Wǒ xiǎng yàodiǎn yītiáo yú。
+							</div>
+							<div class="es">
+								<indent>Pedir</indent>: Me gustaría pedir un pescado.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>住</indent>: 我以前也住在匹兹堡。
+							</div>
+							<div class="py">
+								<indent>Zhù</indent>: Wǒ yǐqián yě zhù zài pǐzībǎo.
+							</div>
+							<div class="es">
+								<indent>Vivir</indent>: Solía vivir en Pittsburgh.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>递给</indent>: 你可以递给我一个东西吗？
+							</div>
+							<div class="py">
+								<indent>Dì gěi</indent>: Nǐ kěyǐ dì gěi wǒ yīgè dōngxī ma?
+							</div>
+							<div class="es">
+								<indent>Pasar</indent>: Me puedes pasar algo?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>问</indent>: 我会问一个问题。
+							</div>
+							<div class="py">
+								<indent>Wèn</indent>: Wǒ huì wèn yīgè wèntí.
+							</div>
+							<div class="es">
+								<indent>Preguntar</indent>: Voy a preguntar una pregunta.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">成为</indent>: 我能成为你的朋友吗？
+							</div>
+							<div class="py">
+								<indent class="attention">Chéngwéi</indent>: Wǒ néng chéngwéi nǐ de péngyǒu ma?
+							</div>
+							<div class="es">
+								<indent>Ser (become)</indent>: Puedo ser to amigo?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>开始</indent>: 你去年六月开始在这里工作吗？
+							</div>
+							<div class="py">
+								<indent>Kāishǐ</indent>: Nǐ qùnián liù yuè kāishǐ zài zhèlǐ gōngzuò ma?
+							</div>
+							<div class="es">
+								<indent>Empezar</indent>: Empezaste a trabajar aquí el junio pasado?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>打电话</indent>: 我打电话吗？/ 你可以打电话给我吗？
+							</div>
+							<div class="py">
+								<indent>Dǎ diànhuà</indent>: Wǒ dǎ diànhuà ma? / Nǐ kěyǐ dǎ diànhuà gěi wǒ ma?
+							</div>
+							<div class="es">
+								<indent>Llamar</indent>: Me puedes llamar?
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>来</indent>: 你要来假期在西班牙！
+							</div>
+							<div class="py">
+								<indent>Lái</indent>: Nǐ yào lái jiàqī zài xībānyá!
+							</div>
+							<div class="es">
+								<indent>Venir</indent>: Tienes que venir a españa de vacaciones.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">度假</indent>: 你 要来 西班牙 度假
+							</div>
+							<div class="py">
+								<indent class="attention">dùjià</indent>: Nǐ yào lái xībānyá dùjià
+							</div>
+							<div class="es">
+								
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>觉得</indent>: 我今天早上觉得很生气，但是现在我好了。
+							</div>
+							<div class="py">
+								<indent>Juédé</indent>: Wǒ jīntiān zǎoshang juédé hěn shēngqì, dànshì xiànzài wǒ hǎole.
+							</div>
+							<div class="es">
+								<indent>Sentir</indent>: Wǒ jīntiān zǎoshang juédé hěn shēngqì, dànshì xiànzài wǒ hǎole.
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>工作</indent>: 医生在医院里工作。
+							</div>
+							<div class="py">
+								<indent>Gōngzuò</indent>: Yīshēng zài yīyuàn lǐ gōngzuò.
+							</div>
+							<div class="es">
+								<indent>Trabajar</indent>: Los médicos trabajan en el hospital.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>得到</indent>: 不要难过，你也得到 了 一个礼品。
+							</div>
+							<div class="py">
+								<indent>Dédào</indent>: Bùyào nánguò, nǐ yě dédàole yīgè lǐpǐn.
+							</div>
+							<div class="es">
+								<indent>Recibes</indent>: No te pongas triste, tu tambien recibes un regalo.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">完成</indent>: 他完成工作之后，我给他一些钱。
+							</div>
+							<div class="py">
+								<indent class="attention">Wánchéng</indent>: Tā wánchéng gōngzuò zhīhòu, wǒ gěi tā yīxiē qián.
+							</div>
+							<div class="es">
+								<indent>Terminar</indent>: Después de terminar el trabajo, le doy dinero.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>知道</indent>: 我知道一个你不知道的秘密。
+							</div>
+							<div class="py">
+								<indent>Zhīdào</indent>: Wǒ zhīdào yīgè nǐ bù zhīdào de mìmì.
+							</div>
+							<div class="es">
+								<indent>Saber</indent>: Sé un secreto que tu tampoco no sabes.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">离开</indent>: 我离开我最喜欢的国家的时候总觉得难过。
+							</div>
+							<div class="py">
+								<indent class="attention">Líkāi</indent>: Wǒ líkāi wǒ zuì xǐhuān de guójiā de shíhòu zǒng juédé nánguò.
+							</div>
+							<div class="es">
+								<indent>Salir</indent>: Cuando salir de mi pais favorito me siento bastante triste.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">让</indent>: 请让我想想。
+							</div>
+							<div class="py">
+								<indent class="attention">Ràng</indent>: Qǐng ràng wǒ xiǎng xiǎng.
+							</div>
+							<div class="es">
+								<indent>Dejar</indent>: Déjame pensar por favor.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">可能</indent>: 如果我结束我的作业我可能会去电影院。
+							</div>
+							<div class="py">
+								<indent class="attention">Kěnéng</indent>: Rúguǒ wǒ jiéshù wǒ de zuòyè wǒ kěnéng huì qù diànyǐngyuàn.
+							</div>
+							<div class="es">
+								<indent>Posible</indent>: Si termino mi tarea, es posible que voy al cine.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">移动</indent>: 不要移动桌子上的盘子。
+							</div>
+							<div class="py">
+								<indent class="attention">Yídòng</indent>: Bùyào yídòng zhuōzi shàng de pánzi.
+							</div>
+							<div class="es">
+								<indent>Mover</indent>: No mueves nada de encima la mesa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">放</indent>: 把它放在桌子上。
+							</div>
+							<div class="py">
+								<indent class="attention">Fàng</indent>: Bǎ tā fàng zài zhuōzi shàng.
+							</div>
+							<div class="es">
+								<indent>Poner</indent>: Ponlo encima la mesa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">跑</indent>: 我以前几乎每天跑，但是我现在每个月跑。
+							</div>
+							<div class="py">
+								<indent class="attention">Pǎo</indent>: Wǒ yǐqián jīhū měitiān pǎo, dànshì wǒ xiànzài měi gè yuè pǎo.
+							</div>
+							<div class="es">
+								<indent>Correr</indent>: Solía correr casi cada día, pero ahora casi cada mes.
+							</div>
+						</div>
+					</div>					
 				</div>
 				<div class="section">
 					<div class="section-date">
@@ -194,7 +524,7 @@
 								Nǐ dàodá de shíhòu, nǐ yào qù èr lóu. Tā yǒu liǎng lóu, dànshì tā de qiánmén zài èr lóu. Tāmen jiā méiyǒu dìxiàshì.
 							</div>
 							<div class="es">
-								Cuando llegas, te vas al segunda piso. El piso tiene dos niveles, pero la puerta de entrada esta en el segundo nivel del edificio. Su piso no tiene sotano.
+								Cuando llegues, te vas al segunda piso. El piso tiene dos niveles, pero la puerta de entrada esta en el segundo nivel del edificio. Su piso no tiene sotano.
 							</div>
 						</div>
 					</div>
