@@ -1,3 +1,0 @@
-name: ingress
-runtime: nodejs
-description: official k8s ingress

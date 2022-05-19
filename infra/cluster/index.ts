@@ -6,7 +6,7 @@ const cluster = new digitalocean.KubernetesCluster('personal-cluster', {
   version: 'latest',
   nodePool: {
     name: 'default-pool',
-    size: digitalocean.DropletSlugs.DropletS1VCPU2GB,
+    size: digitalocean.DropletSlugs.DropletS2VCPU4GB,
     nodeCount: 1,
   },
 });

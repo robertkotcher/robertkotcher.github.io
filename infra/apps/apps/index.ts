@@ -96,7 +96,8 @@ new k8s.networking.v1.Ingress(ingressName, {
 	metadata: {
 		name: ingressName,
 		annotations: {
-			'cert-manager.io/cluster-issuer': 'letsencrypt-prod'
+			'cert-manager.io/cluster-issuer': 'letsencrypt-prod',
+			'kubernetes.io/ingress.class': 'nginx',
 		}
 	},
 	spec: {
