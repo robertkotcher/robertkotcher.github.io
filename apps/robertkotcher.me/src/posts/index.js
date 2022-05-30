@@ -3,6 +3,7 @@ import SingularValueDecomposition from './singular_value_decomposition/Main';
 import VanillaNeuralNetwork from './vanilla_neural_network/Main';
 import DeepCryptokitties from './deep_cryptokitties/Main';
 import Rnns from './rnns/Main';
+import ChineseProverbsWithAirflow from './chinese_proverbs_with_airflow/Main';
 
 // Although it might not be the very best solution, I am going to just
 // register each article on the router for now. Anything that doesn't match
@@ -32,5 +33,10 @@ export default [
     path: 'recurrent-neural-networks',
     component: Rnns,
     meta: { title: 'Some Recurrent Neural Networks, just for fun' }
+  },
+  {
+    path: 'chinese-proverbs-with-airflow',
+    component: ChineseProverbsWithAirflow,
+    meta: { title: 'Chinese Proverb generator with Airflow' }
   }
 ];

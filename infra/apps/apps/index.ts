@@ -59,6 +59,17 @@ export const apps: types.AppArgs[] = [
 			'blog.robertkotcher.me'
 		],
 	},
+	{
+		name: 'kvstore',
+		image: 'wheresmycookie/kvstore',
+		replicas: 1,
+		port: 80,
+		provider: config.provider,
+
+		hosts: [
+			'kvstore.robertkotcher.me'
+		],
+	},
 ];
 
 // ---------- SHOULD NOT HAVE TO MODIFY BELOW HERE ---------
