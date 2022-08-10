@@ -1,0 +1,1148 @@
+<html>
+	<meta charset="UTF-8">
+	<title>我的日记 - Wǒ de rìjì - Mi diario</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			font-family: 'Noto Serif SC', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+			color: #222;
+			margin: 0 12px;
+		}
+
+		indent {
+			margin-left: 22px;
+		}
+
+		.attention {
+			background-color: rgb(224, 90, 199);
+			padding: 2px 6px;
+			border-radius: 6px;
+			color: white;
+		}
+
+		.container {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			height: 100vh;
+		}
+
+		.right-pane {
+			flex: 1;
+			overflow: scroll;
+		}
+
+		.nav {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 12px;
+			height: 60px;
+			width: 100%;
+			font-size: 22px;
+		}
+
+		.section {
+			padding: 22px;
+		}
+
+		.section-title > .languages-container {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		.section-title > .languages-container > .cn {
+			font-size: 28px;
+			line-height: 1.4;
+		}
+
+		.section-title > .languages-container > .py, .section-title > .languages-container > .es {
+			font-size: 22px;
+			font-family: sans-serif;
+		}
+
+		.section-body > .languages-container {
+			padding: 7px 0;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			border-bottom: 1px dashed #eee;
+		}
+
+		.section-body > .languages-container > .cn {
+			font-size: 20px;
+			line-height: 1.3;
+		}
+
+		.section-body > .languages-container > .py, .section-body > .languages-container > .es {
+			font-size: 16px;
+			font-family: sans-serif;
+		}
+
+		.section-date {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			font-weight: 100;
+			color: #333;
+		}
+
+		.cn {
+			flex: 1;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			margin-right: 14px;
+		}
+
+		.py {
+			flex: 1;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			font-family: 'Noto Serif', serif;
+		}
+
+		.es {
+			flex: 1;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			margin-left: 14px;
+			font-family: 'Noto Serif', serif;
+		}
+
+		@media screen and (max-width: 860px) {
+    		.py {
+        		display: none !important;
+    		}
+		}
+
+		@media screen and (max-width: 600px) {
+    		.es {
+        		display: none !important;
+    		}
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="right-pane">
+				<div class="nav">
+					<a target="_blank" href="https://www.robertkotcher.me">关于罗伯特</a>
+				</div>
+				<div class="section">
+					<div class="section-date">
+						2022-07-14
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								我们在伊斯坦布尔的假期
+							</div>
+							<div class="py">
+								Wǒmen zài yīsītǎnbù'ěr de jiàqī
+							</div>
+							<div class="es">
+								Nuestro vacaciones en estambul
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们上周去伊斯坦布尔。我了解到伊斯坦布尔是欧洲的最大城市。它比巴黎和伦敦都大。
+							</div>
+							<div class="py">
+								Wǒmen shàng zhōu qù yīsītǎnbù'ěr. Wǒ liǎojiě dào yīsītǎnbù'ěr shì ōuzhōu de zuìdà chéngshì. Tā bǐ bālí hé lúndūn dū dà.
+							</div>
+							<div class="es">
+								Fuimos a estambul la semana pasada. Aprendí que estambul es la ciudad mas grande en europa. Es mas grande que Londres yi París.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								伊斯坦布尔同时跨越两大洲 - 欧洲还有亚洲。
+							</div>
+							<div class="py">
+								Yīsītǎnbù'ěr tóngshí kuàyuè liǎng dàzhōu - ōuzhōu hái yǒu yàzhōu.
+							</div>
+							<div class="es">
+								Estambul abarca dos continentes al mismo tiempo - Europa y Asia.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们前两天住在欧洲的一侧， 然后我们乘船去了亚洲岛叫 “Prince's Island".
+							</div>
+							<div class="py">
+								Wǒmen qián liǎng tiān zhù zài ōuzhōu de yī cè, ránhòu wǒmen chéng chuán qùle yàzhōu dǎo jiào “Prince's Island".
+							</div>
+							<div class="es">
+								Nos quedamos en el lado europeo durante los dos primeros días, luego fuímos en barco a una isla asiática que se llama "Prince's Island".
+							</div>
+						</div>
+					</div>				
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们就只在这个岛租了两天，因为它是一个小岛。第二天我们骑自行车环岛。
+							</div>
+							<div class="py">
+								Wǒmen jiù zhǐ zài zhège dǎo zhǔle liǎng tiān, yīnwèi tā shì yīgè xiǎo dǎo. Dì èr tiān wǒmen qí zìxíngchē huándǎo.
+							</div>
+							<div class="es">
+								Solo estuvimos en esta isla dos días porque es una isla pequeña. Al día siguiente dimos la vuelta a la isla en bicicleta.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我觉得有趣的事情是伊斯坦布尔是只一座城市， 但是 它有很多大洲的文化。
+							</div>
+							<div class="py">
+								Wǒ juédé yǒuqù de shìqíng shì yīsītǎnbù'ěr shì zhǐ yīzuò chéngshì, dànshì tā yǒu hěnduō dàzhōu de wénhuà.
+							</div>
+							<div class="es">
+								Creo que lo interesante es que Estambul es solo una ciudad, pero tiene las culturas de muchos continentes.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								比如它有欧洲建筑，中东音乐，还有很多从亚洲国家的移民。
+							</div>
+							<div class="py">
+								Bǐrú tā yǒu ōuzhōu jiànzhú, zhōngdōng yīnyuè, hái yǒu hěnduō cóng yàzhōu guójiā de yímín.
+							</div>
+							<div class="es">
+								Por ejemplo, tiene arquitectura europea, música del Medio Oriente y muchos inmigrantes de países asiáticos.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								这座城市的另一个有趣的特色是它到处都有历史。
+							</div>
+							<div class="py">
+								Zhè zuò chéngshì de lìng yīgè yǒuqù de tèsè shì tā dàochù dōu yǒu lìshǐ.
+							</div>
+							<div class="es">
+								Otra característica interesante de la ciudad es que tiene historia por todas partes.
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们还没有看到这座城市的10%。这是一个回去的好理由。
+							</div>
+							<div class="py">
+								Wǒmen hái méiyǒu kàn dào zhè zuò chéngshì de 10%. Zhè shì yīgè huíqù de hǎo lǐyóu.
+							</div>
+							<div class="es">
+								Todavía no hemos visto el 10% de la ciudad. Es una buena razón para volver.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-date">
+						2022-05-25
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								两个西班牙城市
+							</div>
+							<div class="py">
+								Liǎng gè xībānyá chéngshì
+							</div>
+							<div class="es">
+								2 ciudades españoles
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								Valencia是一个很有趣城市, 但是我以前不这么觉得。
+							</div>
+							<div class="py">
+								Valencia shì yīgè hěn yǒuqù chéngshì, dànshì wǒ yǐqián bù zhème juédé.
+							</div>
+							<div class="es">
+								Valencia es una ciudad interesante, pero eso no pensaba tanto antes.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我在Barcelona住了两年。当年Barcelona是我最爱的城市, 因为没有过住在很老的地方。我听到我老婆的父母想搬去Valencia的时候, 我首先觉得很难过。
+							</div>
+							<div class="py">
+								Wǒ zài Barcelona zhùle liǎng nián. Dāngnián Barcelona shì wǒ zuì ài de chéngshì, yīnwèi méiyǒuguò zhù zài hěn lǎo dì dìfāng. Wǒ tīng dào wǒ lǎopó de fùmǔ xiǎng bān qù Valencia de shíhòu, wǒ shǒuxiān juédé hěn nánguò.
+							</div>
+							<div class="es">
+								Vivía en Barcelona dos años. En esos tiempos, Barcelona era mi ciudad favorita, porque no había vivido en un sitio tan folklorico. Cuando escuché que la familia de mi esposa quería mudarse a Valencia, al principio sentí desanimado porque siempre quiero visitar Barcleona.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								Valencia有一些很漂亮的建筑, 但是还有更多丑陋的旧建筑。
+							</div>
+							<div class="py">
+								Valencia yǒu yīxiē hěn piàoliang de jiànzhú, dànshì hái yǒu gèng duō chǒulòu de jiù jiànzhú.
+							</div>
+							<div class="es">
+								Valencia tiene unos edificios encantados, pero tiene aún mas edificios feos.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								Barcelona有很多地方的飞机 - 飞机场很忙。Valencia有很小的飞机场。如果你想从Valencia到西班牙的外面去, 你首先必须坐火车去Barcelona。
+							</div>
+							<div class="py">
+								Barcelona yǒu hěnduō dìfāng de fēijī - fēijī chǎng hěn máng. Valencia yǒu hěn xiǎo de fēijī chǎng. Rúguǒ nǐ xiǎng cóng Valencia dào xībānyá de wàimiàn qù, nǐ shǒuxiān bìxū zuò huǒchē qù Barcelona.
+							</div>
+							<div class="es">
+								Llegan tantos vuelos a Barcelona - por lo tanto el aeropuerto siempre esta ocupado. Valencia tiene un aeropuerto bastante pequeño. Si quieres salir del país, tienes que irte a Barcleona primero.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我现在在Valencia住了3个月。一些想法还是一样的, 但是我在这里觉得高兴。
+							</div>
+							<div class="py">
+								Wǒ xiànzài zài Valencia zhùle 3 gè yuè. Yīxiē xiǎngfǎ háishì yīyàng de, dànshì wǒ zài zhèlǐ juédé gāoxìng.
+							</div>
+							<div class="es">
+								A vivido en Valencia por 3 meses. Mis pensamientos sobre al ciudad estan mas o menos lo mismo, pero siento feliz estar aquí.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								在Valencia 大家很健康, 因为有一个Barcelona没有的大城市的公园。我也觉得更健康了。
+							</div>
+							<div class="py">
+								Zài Valencia dàjiā hěn jiànkāng, yīnwèi yǒu yīgè Barcelona méiyǒu de dà chéngshì de gōngyuán. Wǒ yě juédé gèng jiànkāngle.
+							</div>
+							<div class="es">
+								En Valencia hay un parque muy grande, y Barcelona no tiene algo así. Yo también siento muy sana.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								Valencia也还有很完美的天气。几乎一整年都是晴天。
+							</div>
+							<div class="py">
+								Valencia yě hái yǒu hěn wánměi de tiānqì. Jīhū yī zhěng nián dōu shì qíngtiān.
+							</div>
+							<div class="es">
+								Valencia tiene un clima perfecto. Hay mucho sol casa todo el año.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								最后, Valencia 还有好吃的西班牙菜。食物很便宜和也还很好吃。
+							</div>
+							<div class="py">
+								Zuìhòu, Valencia hái yǒu hào chī de xībānyá cài. Shíwù hěn piányí hé yě hái hěn hào chī.
+							</div>
+							<div class="es">
+								Finalmente, Valencia tiene buena comida española. La comida es barata y también deliciosa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								这里你不用花很多钱也能有一个很好生活。
+							</div>
+							<div class="py">
+								Zhèlǐ nǐ bùyòng huā hěnduō qián yě néng yǒu yīgè hěn hào shēnghuó.
+							</div>
+							<div class="es">
+								Aquí, puedes encontrar la vida buena sin gastar tanto dinero.
+							</div>
+						</div>
+					</div>
+				</div>				
+				<div class="section">
+					<div class="section-date">
+						2022-05-18
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								五十常用动词的句子
+							</div>
+							<div class="py">
+								Wǔshí chángyòng dòngcí de jùzi
+							</div>
+							<div class="es">
+								50 oraciones con verbos comunes
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我看到一个语言网站叫 “50常用动词“。我尝试在这个作业用它们。
+							</div>
+							<div class="py">
+								Wǒ kàn dào yīgè yǔyán wǎngzhàn jiào “50 chángyòng dòngcí “. Wǒ chángshì zài zhège zuòyè yòng tāmen.
+							</div>
+							<div class="es">
+								Ví un sitio web que se llama "50 verbos comunes". Intento usarlos en ese tarea.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>长大</indent>: 我在匹兹堡长大。
+							</div>
+							<div class="py">
+								<indent>Zhǎng dà</indent>: Wǒ zài pǐzībǎo zhǎng dà.
+							</div>
+							<div class="es">
+								<indent>Crecer</indent>: Yo crecí en Pittsburgh.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>跟</indent>: 请跟我来 / 请跟我说 / 请跟我走 / 我跟你一起玩
+							</div>
+							<div class="py">
+								<indent>Gēn</indent>: Qǐng gēn wǒ lái / qǐng gēn wǒ shuō / qǐng gēn wǒ zǒu / wǒ gēn nǐ yīqǐ wán。
+							</div>
+							<div class="es">
+								
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>稍等</indent>: 请等一下
+							</div>
+							<div class="py">
+								<indent>Shāo děng</indent>: Qǐng děng yīxià
+							</div>
+							<div class="es">
+								<indent>Esperar</indent>: Espera
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>点</indent>: 我想要点一条鱼。
+							</div>
+							<div class="py">
+								<indent>Diǎn</indent>: Wǒ xiǎng yàodiǎn yītiáo yú。
+							</div>
+							<div class="es">
+								<indent>Pedir</indent>: Me gustaría pedir un pescado.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>住</indent>: 我以前也住在匹兹堡。
+							</div>
+							<div class="py">
+								<indent>Zhù</indent>: Wǒ yǐqián yě zhù zài pǐzībǎo.
+							</div>
+							<div class="es">
+								<indent>Vivir</indent>: Solía vivir en Pittsburgh.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>递给</indent>: 你可以递给我一个东西吗？
+							</div>
+							<div class="py">
+								<indent>Dì gěi</indent>: Nǐ kěyǐ dì gěi wǒ yīgè dōngxī ma?
+							</div>
+							<div class="es">
+								<indent>Pasar</indent>: Me puedes pasar algo?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>问</indent>: 我会问一个问题。
+							</div>
+							<div class="py">
+								<indent>Wèn</indent>: Wǒ huì wèn yīgè wèntí.
+							</div>
+							<div class="es">
+								<indent>Preguntar</indent>: Voy a preguntar una pregunta.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">成为</indent>: 我能成为你的朋友吗？
+							</div>
+							<div class="py">
+								<indent class="attention">Chéngwéi</indent>: Wǒ néng chéngwéi nǐ de péngyǒu ma?
+							</div>
+							<div class="es">
+								<indent>Ser (become)</indent>: Puedo ser to amigo?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>开始</indent>: 你去年六月开始在这里工作吗？
+							</div>
+							<div class="py">
+								<indent>Kāishǐ</indent>: Nǐ qùnián liù yuè kāishǐ zài zhèlǐ gōngzuò ma?
+							</div>
+							<div class="es">
+								<indent>Empezar</indent>: Empezaste a trabajar aquí el junio pasado?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>打电话</indent>: 我打电话吗？/ 你可以打电话给我吗？
+							</div>
+							<div class="py">
+								<indent>Dǎ diànhuà</indent>: Wǒ dǎ diànhuà ma? / Nǐ kěyǐ dǎ diànhuà gěi wǒ ma?
+							</div>
+							<div class="es">
+								<indent>Llamar</indent>: Me puedes llamar?
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>来</indent>: 你要来假期在西班牙！
+							</div>
+							<div class="py">
+								<indent>Lái</indent>: Nǐ yào lái jiàqī zài xībānyá!
+							</div>
+							<div class="es">
+								<indent>Venir</indent>: Tienes que venir a españa de vacaciones.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">度假</indent>: 你 要来 西班牙 度假
+							</div>
+							<div class="py">
+								<indent class="attention">dùjià</indent>: Nǐ yào lái xībānyá dùjià
+							</div>
+							<div class="es">
+								
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>觉得</indent>: 我今天早上觉得很生气，但是现在我好了。
+							</div>
+							<div class="py">
+								<indent>Juédé</indent>: Wǒ jīntiān zǎoshang juédé hěn shēngqì, dànshì xiànzài wǒ hǎole.
+							</div>
+							<div class="es">
+								<indent>Sentir</indent>: Wǒ jīntiān zǎoshang juédé hěn shēngqì, dànshì xiànzài wǒ hǎole.
+							</div>
+						</div>
+					</div>	
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>工作</indent>: 医生在医院里工作。
+							</div>
+							<div class="py">
+								<indent>Gōngzuò</indent>: Yīshēng zài yīyuàn lǐ gōngzuò.
+							</div>
+							<div class="es">
+								<indent>Trabajar</indent>: Los médicos trabajan en el hospital.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>得到</indent>: 不要难过，你也得到 了 一个礼品。
+							</div>
+							<div class="py">
+								<indent>Dédào</indent>: Bùyào nánguò, nǐ yě dédàole yīgè lǐpǐn.
+							</div>
+							<div class="es">
+								<indent>Recibes</indent>: No te pongas triste, tu tambien recibes un regalo.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">完成</indent>: 他完成工作之后，我给他一些钱。
+							</div>
+							<div class="py">
+								<indent class="attention">Wánchéng</indent>: Tā wánchéng gōngzuò zhīhòu, wǒ gěi tā yīxiē qián.
+							</div>
+							<div class="es">
+								<indent>Terminar</indent>: Después de terminar el trabajo, le doy dinero.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent>知道</indent>: 我知道一个你不知道的秘密。
+							</div>
+							<div class="py">
+								<indent>Zhīdào</indent>: Wǒ zhīdào yīgè nǐ bù zhīdào de mìmì.
+							</div>
+							<div class="es">
+								<indent>Saber</indent>: Sé un secreto que tu tampoco no sabes.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">离开</indent>: 我离开我最喜欢的国家的时候总觉得难过。
+							</div>
+							<div class="py">
+								<indent class="attention">Líkāi</indent>: Wǒ líkāi wǒ zuì xǐhuān de guójiā de shíhòu zǒng juédé nánguò.
+							</div>
+							<div class="es">
+								<indent>Salir</indent>: Cuando salir de mi pais favorito me siento bastante triste.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">让</indent>: 请让我想想。
+							</div>
+							<div class="py">
+								<indent class="attention">Ràng</indent>: Qǐng ràng wǒ xiǎng xiǎng.
+							</div>
+							<div class="es">
+								<indent>Dejar</indent>: Déjame pensar por favor.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">可能</indent>: 如果我结束我的作业我可能会去电影院。
+							</div>
+							<div class="py">
+								<indent class="attention">Kěnéng</indent>: Rúguǒ wǒ jiéshù wǒ de zuòyè wǒ kěnéng huì qù diànyǐngyuàn.
+							</div>
+							<div class="es">
+								<indent>Posible</indent>: Si termino mi tarea, es posible que voy al cine.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">移动</indent>: 不要移动桌子上的盘子。
+							</div>
+							<div class="py">
+								<indent class="attention">Yídòng</indent>: Bùyào yídòng zhuōzi shàng de pánzi.
+							</div>
+							<div class="es">
+								<indent>Mover</indent>: No mueves nada de encima la mesa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">放</indent>: 把它放在桌子上。
+							</div>
+							<div class="py">
+								<indent class="attention">Fàng</indent>: Bǎ tā fàng zài zhuōzi shàng.
+							</div>
+							<div class="es">
+								<indent>Poner</indent>: Ponlo encima la mesa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								<indent class="attention">跑</indent>: 我以前几乎每天跑，但是我现在每个月跑。
+							</div>
+							<div class="py">
+								<indent class="attention">Pǎo</indent>: Wǒ yǐqián jīhū měitiān pǎo, dànshì wǒ xiànzài měi gè yuè pǎo.
+							</div>
+							<div class="es">
+								<indent>Correr</indent>: Solía correr casi cada día, pero ahora casi cada mes.
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="section">
+					<div class="section-date">
+						2022-05-02
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								在我的公寓
+							</div>
+							<div class="py">
+								Zài wǒ de gōngyù
+							</div>
+							<div class="es">
+								Mi piso
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们现在在老婆的父母的公寓。
+							</div>
+							<div class="py">
+								Wǒmen xiànzài zài lǎopó de fùmǔ de gōngyù.
+							</div>
+							<div class="es">
+								Estamos en el piso de la familia de mi esposa.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								它离Kenosha很近。从他们的公寓到Kenosha只要20分钟，这里有很多农场。
+							</div>
+							<div class="py">
+								Tā lí Kenosha hěn jìn. Cóng tāmen de gōngyù dào Kenosha zhǐyào 20 fēnzhōng, zhè li yǒu hěnduō nóngchǎng.
+							</div>
+							<div class="es">
+								Esta bastante cerca Kenosha. Esta aproximamente 20 minutos fuera del ciudad en una zona con muchas granjas.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								你到达的时候，你要去二楼。它有两楼，但是它的前门在二楼 。他们家没有地下室。
+							</div>
+							<div class="py">
+								Nǐ dàodá de shíhòu, nǐ yào qù èr lóu. Tā yǒu liǎng lóu, dànshì tā de qiánmén zài èr lóu. Tāmen jiā méiyǒu dìxiàshì.
+							</div>
+							<div class="es">
+								Cuando llegues, te vas al segunda piso. El piso tiene dos niveles, pero la puerta de entrada esta en el segundo nivel del edificio. Su piso no tiene sotano.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								房子一楼有一个大厨房。一楼还有可以看一个小湖的阳台。
+							</div>
+							<div class="py">
+								Fángzi yī lóu yǒu yīgè dà chúfáng. Yī lóu hái yǒu kěyǐ kàn yīgè xiǎo hú de yángtái.
+							</div>
+							<div class="es">
+								El primero piso de la casa tiene una cocina amplio. También hay un balcón en el primer piso con vista a un pequeño estanque.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我的卧室在公寓二楼。我白天在那里学习，和夜间在哪里睡觉。我有一张没有窗户的桌子很伤心。
+							</div>
+							<div class="py">
+								Wǒ de wòshì zài gōngyù èr lóu. Wǒ báitiān zài nàlǐ xuéxí, hé yèjiān zài nǎlǐ shuìjiào. Wǒ yǒuyī zhāng méiyǒu chuānghù de zhuōzi hěn shāngxīn.
+							</div>
+							<div class="es">
+								Mi dormitorio esta en el segundo piso del apartamento. Estudio durante el dia, y duermo allí por la noche. Pero mi escritorio falta una ventana.
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								可是他们的公寓很好。
+							</div>
+							<div class="py">
+								Kěshì tāmen de gōngyù hěn hǎo.
+							</div>
+							<div class="es">
+								Pero me parece muy bien su apartamento.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-date">
+						2022-04-28
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								你喜欢你的工作吗？
+							</div>
+							<div class="py">
+								Nǐ xǐhuān nǐ de gōngzuò ma?
+							</div>
+							<div class="es">
+								Te gusta tu trabajo?
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我是一个程序员。
+							</div>
+							<div class="py">
+								Wǒ shì yīgè chéngxù yuán.
+							</div>
+							<div class="es">
+								Soy programador.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								这个意味我一整天都坐着看电脑。
+							</div>
+							<div class="py">
+								Zhège yìwèi wǒ yī zhěng tiān dū zuòzhe kàn diànnǎo.
+							</div>
+							<div class="es">
+								Basicamente me siento y miro a mi computadora todo el día.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我的职业有好有坏的东西。
+							</div>
+							<div class="py">
+								Wǒ de zhíyè yǒu hǎo yǒu huài de dōngxī.
+							</div>
+							<div class="es">
+								Mi carrera tiene cosas buenas y coasa malas.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								比如它有很好的工资和我能学习很多新的东西。
+							</div>
+							<div class="py">
+								Bǐrú tā yǒu hěn hǎo de gōngzī hé wǒ néng xuéxí hěnduō xīn de dōngxī.
+							</div>
+							<div class="es">
+								Por ejemplo me ofrece un buen sueldo y también tengo la oportunidad aprender cosas nuevas.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								你需要学习去提高。
+							</div>
+							<div class="py">
+								Nǐ xūyào xuéxí qù tígāo.
+							</div>
+							<div class="es">
+								Necessitas aprender para mejorar.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我的公司给我很多时间学习新的东西。
+							</div>
+							<div class="py">
+								Wǒ de gōngsī gěi wǒ hěnduō shíjiān xuéxí xīn de dōngxī.
+							</div>
+							<div class="es">
+								Mi trabajo me da mucho tiempo estudiar coasas nuevas.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我不喜欢我公司的一些东西。
+							</div>
+							<div class="py">
+								Wǒ bù xǐhuān wǒ gōngsī de yīxiē dōngxī.
+							</div>
+							<div class="es">
+								Pero hay cosas sobre mi trabajo que no me gusta tampoco.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								比如我不喜欢一整天看看电脑因为我的眼睛会很累。
+							</div>
+							<div class="py">
+								Bǐrú wǒ bù xǐhuān yī zhěng tiān kàn kàn diànnǎo yīnwèi wǒ de yǎnjīng huì hěn lèi.
+							</div>
+							<div class="es">
+								Por ejemplo no me gusta mirar todo el día a mi computadora porque me cansan mucho los ojos.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								还有我不喜欢为别人的公司工作。我觉得我是很 "millenial"。
+							</div>
+							<div class="py">
+								Hái yǒu wǒ bù xǐhuān wèi biérén de gōngsī gōngzuò. Wǒ juédé wǒ shì hěn"millenial".
+							</div>
+							<div class="es">
+								No me gusta trabajar por otra persona. Supongo que soy "millenial".
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-date">
+						2022-04-25
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								Wisconsin 的天气很奇怪
+							</div>
+							<div class="py">
+								Wisconsin de tiānqì hěn qíguài
+							</div>
+							<div class="es">
+								El clima de Wisconsin es raro
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我们这个星期在Wisconsin. 我们会住在这里两个星期。今天是第五天。每天的天气都是不同的。
+							</div>
+							<div class="py">
+								Wǒmen zhège xīngqí zài Wisconsin. Wǒmen huì zhù zài zhèlǐ liǎng gè xīngqí. Jīntiān shì dì wǔ tiān. Měitiān dū yǒu bùtóng de tiānqì.
+							</div>
+							<div class="es">
+								Estamos en Wisconsin esta semana, y vamos a quedarnos aqui dos semanas. Hoy es el quinto día. Cada día ha tendio un clima diferente.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我们到达的时候有很多雪。虽然现在是四月，但我们到达的时候有很雪。第一天感觉像冬天。
+							</div>
+							<div class="py">
+								Wǒmen dàodá de shíhòu yǒu hěnduō xuě. Suīrán xiànzài shì sì yuè, dàn wǒmen dàodá de shíhòu yǒu hěn xuě. Dì yī tiān gǎnjué xiàng dōngtiān.
+							</div>
+							<div class="es">
+								Había mucha nieve cuando llegamos. Aunque era abril, estaba nevando cuando llegamos. El primer día se sintió a invierno.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第二天是晴天。这天像夏天。
+							</div>
+							<div class="py">
+								Dì èr tiān shì qíngtiān. Zhè tiān xiàng xiàtiān.
+							</div>
+							<div class="es">
+								El día siguiente estaba soleado. Este día era como el verano.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第三天有很多云和很多雨。但是我没有看到彩虹因为第三天没有太阳。第三天像春天。
+							</div>
+							<div class="py">
+								Dì sān tiān yǒu hěnduō yún hé hěnduō yǔ. Dànshì wǒ méiyǒu kàn dào cǎihóng yīnwèi dì sān tiān méiyǒu tàiyáng. Dì sān tiān xiàng chūntiān.
+							</div>
+							<div class="es">
+								El tercer día estuvo nublado y lluvioso. Pero no vi un arco iris porque no había sol en el tercer día. El tercer día es como la primavera.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								第四天是晴天。这天很热。
+							</div>
+							<div class="py">
+								Dì sì tiān shì qíngtiān. Zhè tiān hěn rè.
+							</div>
+							<div class="es">
+								El cuarto día fue soleado. Fue un día caluroso.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								今天很冷和有很多云。
+							</div>
+							<div class="py">
+								Jīntiān hěn lěng hé yǒu hěnduō yún.
+							</div>
+							<div class="es">
+								Hace frío y está nublado hoy.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								Wisconsin 的天气很奇怪。
+							</div>
+							<div class="py">
+								Wisconsin de tiānqì hěn qíguài.
+							</div>
+							<div class="es">
+								El clima de Wisconsin es extraño.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-date">
+						2022-04-10
+					</div>
+					<div class="section-title">
+						<div class="languages-container">
+							<div class="cn">
+								学习语言很难
+							</div>
+							<div class="py">
+								Xuéxí yǔyán hěn nán
+							</div>
+							<div class="es">
+								Aprender un idioma es difícil
+							</div>
+						</div>
+					</div>
+					<div class="section-body">
+						<div class="languages-container">
+							<div class="cn">
+								我在中学的时候，我的老师说需要听新词八十次才可以记住它。
+							</div>
+							<div class="py">
+								Wǒ zài zhōngxué de shíhòu, wǒ de lǎoshī shuō xūyào tīng xīn cí bāshí cì cái kěyǐ jì zhù tā.
+							</div>
+							<div class="es">
+								Cuando estaba en la escuela secundaria, mi profesora me dijo que "necesitas escuchar una palabra nueva ochenta veces para memorizarla".
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我在中学的时候，我不是很擅长学习语言。
+							</div>
+							<div class="py">
+								Wǒ zài zhōngxué de shíhòu, wǒ bùshì hěn shàncháng xuéxí yǔyán.
+							</div>
+							<div class="es">
+								Cuando estaba en la escuela secundaria, no era muy bueno en aprender idiomas.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								但是我从没用新词八十次。
+							</div>
+							<div class="py">
+								Dànshì wǒ cóng méi yòng xīn cí bāshí cì.
+							</div>
+							<div class="es">
+								Pero nunca usé mis palabra nuevas ochenta veces.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								你不能从考试中学习语言。
+							</div>
+							<div class="py">
+								Nǐ bùnéng cóng kǎoshì zhōng xuéxí yǔyán.
+							</div>
+							<div class="es">
+								No se pueden aprender idiomas solo con exámenes.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我现在不会为了考试而学习语言。
+							</div>
+							<div class="py">
+								Wǒ xiànzài bù huì wèile kǎoshì ér xuéxí yǔyán.
+							</div>
+							<div class="es">
+								No estudio idiomas con exámenes ahora.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我觉得学习语言更好的方法是用这门语言和从记住中学习。
+							</div>
+							<div class="py">
+								Wǒ juédé xuéxí yǔyán gèng hǎo de fāngfǎ shì yòng zhè mén yǔyán hé cóng jì zhù zhōng xuéxí.
+							</div>
+							<div class="es">
+								Creo que la mejor manera de aprender un idioma es usarlo.
+							</div>
+						</div>
+						<div class="languages-container">
+							<div class="cn">
+								我现在不在数我的新词了。
+							</div>
+							<div class="py">
+								Wǒ xiànzài bùzài shù wǒ de xīn cíle.
+							</div>
+							<div class="es">
+								No estoy contando mis nuevas palabras ahora.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
