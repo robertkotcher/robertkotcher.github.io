@@ -3,7 +3,7 @@
     <img src="../../assets/travel-map.png"/>
 		<div class="map-footer">
 			<small>Blue denotes places that I have visited.</small>
-			<small>Languages spoken: español, <a href="https://blog.robertkotcher.me" target="_blank">我在学习中文</a></small>
+			<small>Languages spoken: español, <a href="https://robertkotcher.github.io/blog" target="_blank">我在学习中文</a></small>
 		</div>
   </div>
 </template>

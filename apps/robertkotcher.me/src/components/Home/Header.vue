@@ -28,7 +28,7 @@
           </tr>
           <tr>
             <td class="inner-col emoji-col">🌱</td>
-            <td class="inner-col">My favorite things are <a href="/?tag=travel" target="_blank">travelling</a>, <a href="https://blog.robertkotcher.me" target="_blank">learning languages</a>, and <a href="/?tag=learning" target="_blank">learning new technical skills</a>.</td>
+            <td class="inner-col">My favorite things are <a href="/?tag=travel" target="_blank">travelling</a>, <a href="https://robertkotcher.github.io/blog" target="_blank">learning languages</a>, and <a href="/?tag=learning" target="_blank">learning new technical skills</a>.</td>
           </tr>
           <tr>
             <td class="inner-col emoji-col">🎓</td>

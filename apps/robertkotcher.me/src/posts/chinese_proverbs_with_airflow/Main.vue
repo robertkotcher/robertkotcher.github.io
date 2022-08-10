@@ -19,7 +19,7 @@
     </p>
     <h2>Chinese Proverb Pipeline</h2>
     <p>
-        The Chinese Proverb Pipeline is fairly straightforward, as depicted in the diagram below. <strong>fetch_known_words</strong> scans my <a target='_blank' href='https://blog.robertkotcher.me'>language blog</a> for Chinese words that I've used in my writeups. <strong>fetch_proverbs</strong> fetches a CSV containing about 150 Chinese proverbs. <strong>choose_proverb</strong> combines the results of both of these operations and chooses a proverb that introduces new words, but not too many new words. Finally, <strong>save_proverb</strong> stores the proverb in an in-cluster data store.
+        The Chinese Proverb Pipeline is fairly straightforward, as depicted in the diagram below. <strong>fetch_known_words</strong> scans my <a target='_blank' href='https://robertkotcher.github.io/blog'>language blog</a> for Chinese words that I've used in my writeups. <strong>fetch_proverbs</strong> fetches a CSV containing about 150 Chinese proverbs. <strong>choose_proverb</strong> combines the results of both of these operations and chooses a proverb that introduces new words, but not too many new words. Finally, <strong>save_proverb</strong> stores the proverb in an in-cluster data store.
     </p>
     <div class="image-container">
         <img class="pipeline-diagram" src="./chinese_proverb.png"/>
