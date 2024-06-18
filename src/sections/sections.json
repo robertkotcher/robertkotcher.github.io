@@ -11,7 +11,7 @@
           "music"
         ],
         "description": [
-          "I studied music and computer science at Carnegie Mellon University, in Pittsburgh, PA."
+          "<p>I focused on both computer science and music - not so much the combination of the two but rather a deeper, independent, focus on each.</p><br/><p>For example, my violin sonata was released under the <a target='_blank' href='https://open.spotify.com/album/2QDn3jB196YdTkCeLejQsD?si=o2xHYGXTTPu_xy58UDan0Q'>Ablaze Records</a> label, and my string quartet was <a target='_blank' href='https://youtube.com/watch?v=cOQiKpodSNE'>recorded</a> by Grammy-nominated JACK string quartet.</p><br/><p>I also published a few <a target='_blank' href='https://dl.acm.org/profile/84458745857'>highly-cited papers</a> as part of my undergraduate coursework, and was a <a target='_blank' href='https://www.blackhat.com/us-16/speakers/Robert-Kotcher.html'>speaker at Black Hat 2016</a>.</p>"
         ]
       }
     ]
@@ -21,6 +21,7 @@
     "items": [
       {
         "start": 2020,
+        "end": 2023,
         "image": "synthesis.png",
         "name": "<a href='https://synthesis.ai/' target='_blank'>Synthesis.ai</a> - <small>second engineering hire</small>",
         "tags": [
@@ -35,6 +36,7 @@
       },
       {
         "start": 2020,
+        "end": 2022,
         "image": "codecov.jpg",
         "name": "<a href='https://codecov.io/' target='_blank'>Codecov</a> - <small>research and development</small>",
         "tags": [
@@ -134,7 +136,7 @@
         "end": 2022,
         "name": "<a target='_blank' href='/posts/chinese-proverbs-with-airflow'>Chinese Proverbs with Airflow</a>",
         "tags": [
-          "learning",
+          "old",
           "airflow",
           "chinese"
         ],
@@ -147,7 +149,7 @@
         "end": 2022,
         "name": "<a target='_blank' href='https://github.com/robertkotcher/goml2/blob/master/main.go'>goml2: Decision Trees</a>",
         "tags": [
-          "learning",
+          "old",
           "machine learning",
           "golang"
         ],
@@ -199,6 +201,8 @@
         ]
       },
       {
+        "start": 2020,
+        "end": 2022,
         "image": "profile.png",
         "name": "<a target='_blank' href='/'>Personal Website</a>",
         "tags": [
@@ -234,7 +238,7 @@
         "image": "rnn.png",
         "name": "<a target='_blank' href='/posts/recurrent-neural-networks'>Fun with Recurrent Neural Networks</a>",
         "tags": [
-          "learning",
+          "old",
           "deep learning",
           "recurrent neural networks"
         ],
@@ -248,7 +252,7 @@
         "image": "cryptokitty.png",
         "name": "<a target='_blank' href='/posts/deep-cryptokitties'>Deep Cryptokitties</a>",
         "tags": [
-          "learning",
+          "old",
           "deep learning",
           "general adversarial networks"
         ],
@@ -262,7 +266,7 @@
         "image": "svm.png",
         "name": "<a target='_blank' href='/posts/large-margin-classifiers'>Intuition behind large margin classification</a>",
         "tags": [
-          "learning",
+          "old",
           "machine learning",
           "svm"
         ],
@@ -276,7 +280,7 @@
         "image": "nn.png",
         "name": "<a target='_blank' href='/posts/vanilla-neural-network'>I made a vanilla neural network from scratch</a>",
         "tags": [
-          "learning",
+          "old",
           "machine learning",
           "deep learning"
         ],
@@ -290,7 +294,7 @@
         "image": "svd.png",
         "name": "<a target='_blank' href='/posts/singular-value-decomposition'>Singular Value Decomposition: Two Perspectives</a>",
         "tags": [
-          "learning",
+          "old",
           "linear algebra"
         ],
         "description": [

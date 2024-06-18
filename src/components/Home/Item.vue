@@ -1,5 +1,6 @@
 <template>
   <div class="item-container">
+    <img :src="require(`@/assets/${item.image}`)" alt="Item Image" class="item-image" />
     <div class="item-text-panel">
       <h3
         v-html="item.name"
@@ -87,5 +88,10 @@
 
   .item-text {
     margin: 7px 0 2px 0;
+  }
+
+  .item-image {
+    width: 50px;
+    margin-right: 25px;
   }
 </style>
