@@ -1,3 +1,0 @@
-name: dns_entries
-runtime: nodejs
-description: A minimal TypeScript Pulumi program

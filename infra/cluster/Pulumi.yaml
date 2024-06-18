@@ -1,3 +1,0 @@
-name: pc-infra
-runtime: nodejs
-description: A minimal TypeScript Pulumi program
