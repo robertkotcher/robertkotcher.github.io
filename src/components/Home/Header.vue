@@ -2,10 +2,11 @@
   <div id="header">
     <div class="chip-container-small" v-if="tagStore.state.activeTag">
       <a href="/" class="header-title-small">Robert Kotcher</a>
-      <Chip small primary tag="learning" text="learning" :selected="isActiveTag('learning')"/>
-      <Chip small primary tag="industry" text="industry" :selected="isActiveTag('industry')"/>
+      <Chip small primary tag="recent projects" text="recent projects" :selected="isActiveTag('projects')"/>
+      <Chip small primary tag="education" text="education" :selected="isActiveTag('education')"/>
+      <Chip small primary tag="startups" text="startups" :selected="isActiveTag('startups')"/>
       <Chip small primary tag="travel" text="travel" :selected="isActiveTag('languages')"/>
-      <Chip small secondary tag="old" text="old" :selected="isActiveTag('old')"/>
+      <Chip small secondary tag="archived projects" text="archived projects" :selected="isActiveTag('archived projects')"/>
     </div>
     <div class="header-container" v-if="!tagStore.state.activeTag">
       <div class="image-panel animation-panel-first">
@@ -14,7 +15,7 @@
       <div class="intro-panel animation-panel-second">
         <div class="header-title">Robert Kotcher</div>
         <p class="header-text">
-          Computers, travel, sushi.
+          Computers, lean startup methodology, travel, sushi.
         </p>
         <div class="link-container">
           <a target="_blank" href="https://huggingface.co/rkotcher"><img src="../../assets/hf.png" class="header-link"/></a>
@@ -22,10 +23,11 @@
           <a target="_blank" href="https://www.linkedin.com/in/robert-kotcher-639105196/"><img src="../../assets/li.png" class="header-link"/></a>
         </div>
         <div class="chip-container">
-          <Chip primary tag="learning" text="learning"/>
-          <Chip primary tag="industry" text="industry"/>
+          <Chip primary tag="recent projects" text="recent projects"/>
+          <Chip primary tag="education" text="education"/>
+          <Chip primary tag="startups" text="startups"/>
           <Chip primary tag="travel" text="travel"/>
-          <Chip secondary tag="old" text="old"/>
+          <Chip secondary tag="archived projects" text="archived projects"/>
         </div>
       </div>
     </div>
@@ -97,6 +99,7 @@
   }
 
   .chip-container {
+    max-width: 500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -124,19 +127,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
   }
 
   .link-container > a {
     margin: 0 8px;
   }
-
-  @media only screen and (max-width: 550px) {
-    .left-panel {
-      display: none;
-    }
-  }
-
+  
   .image-panel {
     position: fixed;
     top: 0;
@@ -169,6 +165,42 @@
     overflow: hidden;
   }
 
+
+  @media only screen and (max-width: 600px) {
+    .header-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-panel {
+      position: relative;
+      left: initial;
+      top: initial;
+      width: 100%;
+    }
+
+    .image-panel img {
+      position: relative;
+      top: initial;
+      left: initial;
+      width: 100%;
+      transform: initial;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
+
+    .intro-panel {
+      position: relative;
+      left: initial;
+      top: initial;
+      width: 100%;
+    }
+
+    .link-container {
+      margin-bottom: 12px;
+    }
+  }
+
   .header-title {
     text-align: center;
     font-size: 50px;
@@ -192,7 +224,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     font-size: 20px;
     text-align: center;
     padding: 0 8px;

@@ -1,5 +1,6 @@
 [
   {
+    "name": "Education",
     "items": [
       {
         "image": "carnegie_mellon.png",
@@ -7,6 +8,7 @@
         "end": 2012,
         "name": "Carnegie Mellon University",
         "tags": [
+          "education",
           "computer science",
           "music"
         ],
@@ -17,8 +19,56 @@
     ]
   },
   {
+    "name": "Projects",
+    "items": [
+      {
+        "image": "gh.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "Zoom meeting bot",
+        "tags": [
+          "recent projects",
+          "docker"
+        ],
+        "description": [
+          "<div style='position: relative; padding-bottom: 62.5%; height: 0;'><iframe src='https://www.loom.com/embed/76151c26376848d48d6220e458e95cbf?sid=eaf00be1-5df3-4c48-841b-5e7ad600a2a2' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></iframe></div>",
+          "This is a project that I built using the Zoom SDK and Docker. It allows me to join, record, and upload Zoom meetings."
+        ]
+      },
+      {
+        "image": "yt.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "Cats Off",
+        "tags": [
+          "recent projects",
+          "arduino"
+        ],
+        "description": [
+          "<iframe width='100%' height='400' src='https://www.youtube.com/embed/vI_yvnjDnOw?si=NBeBgF22mChMbAUr' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+          "For this project, I built a device using an arduino and found objects to spray my cat off the counter."
+        ]
+      }
+    ]
+  },
+  {
     "name": "Industry Experience",
     "items": [
+      {
+        "start": 2023,
+        "image": "kahuna-logo.png",
+        "name": "<a href='https://joinkahuna.com' target='_blank'>joinkahuna.com</a> - <small>co-founder, CTO</small>",
+        "tags": [
+          "industry",
+          "startups",
+          "kubernetes",
+          "python",
+          "rag pipeline"
+        ],
+        "description": [
+          "Kahuna is a platform for institutional investors that parses very large, legally-dense documents, into a format that is quickly digestable."
+        ]
+      },
       {
         "start": 2020,
         "end": 2023,
@@ -26,6 +76,7 @@
         "name": "<a href='https://synthesis.ai/' target='_blank'>Synthesis.ai</a> - <small>second engineering hire</small>",
         "tags": [
           "industry",
+          "startups",
           "kubernetes",
           "golang",
           "node js"
@@ -41,9 +92,11 @@
         "name": "<a href='https://codecov.io/' target='_blank'>Codecov</a> - <small>research and development</small>",
         "tags": [
           "industry",
+          "startups",
           "software_profiling"
         ],
         "description": [
+          "<span><strong style='background-color:#ffff00'>Update: Codecov has been <a target='_blank' href='https://about.codecov.io/product/feature/codecov-sentry/'>acquired by Sentry</a>.</strong> One of my R&D projects was carried over for continued development at Sentry.</span>",
           "I'm currently working with Codecov to prototype experimental code coverage tools and features for future integration into the core Codecov product."
         ]
       },
@@ -123,7 +176,7 @@
           "startups"
         ],
         "description": [
-          "I was the first hire at Tunessence while I was a student at Carnegie Mellon. The company was acquired by Hal-Leonard."
+          "I was the first hire at Tunessence while I was a student at Carnegie Mellon. <strong style='background-color:#ffff00'>Tunessence was <a target='_blank' href='https://www.innovationworks.org/companies-archive/tunessence-acquired-by-hal-leonard/'>acquired by Hal Leonard</a>.</strong>"
         ]
       }
     ]
@@ -136,7 +189,7 @@
         "end": 2022,
         "name": "<a target='_blank' href='/posts/chinese-proverbs-with-airflow'>Chinese Proverbs with Airflow</a>",
         "tags": [
-          "old",
+          "archived projects",
           "airflow",
           "chinese"
         ],
@@ -149,7 +202,7 @@
         "end": 2022,
         "name": "<a target='_blank' href='https://github.com/robertkotcher/goml2/blob/master/main.go'>goml2: Decision Trees</a>",
         "tags": [
-          "old",
+          "archived projects",
           "machine learning",
           "golang"
         ],
@@ -164,7 +217,7 @@
         "image": "lambda.png",
         "name": "<a target='_blank' href='https://www.npmjs.com/package/js-to-lambda'>Javascript to λ-calculus transpiler</a>",
         "tags": [
-          "old",
+          "archived projects",
           "computer science"
         ],
         "description": [
@@ -178,7 +231,7 @@
         "image": "npm.png",
         "name": "<a target='_blank' href='https://www.npmjs.com/package/multi-tenant-migrate'>Multi-Tenant Migrate</a>",
         "tags": [
-          "old",
+          "archived projects",
           "multi-tenancy",
           "postgresql",
           "node js"
@@ -193,7 +246,7 @@
         "image": "quadratic.png",
         "name": "<a target='_blank' href='https://v1.expii.com/editor/create/explanation/9019'>Math and Science Editor</a>",
         "tags": [
-          "old",
+          "archived projects",
           "react js"
         ],
         "description": [
@@ -206,7 +259,7 @@
         "image": "profile.png",
         "name": "<a target='_blank' href='/'>Personal Website</a>",
         "tags": [
-          "old",
+          "archived projects",
           "vue js"
         ],
         "description": [
@@ -219,7 +272,7 @@
         "image": "spatianator.png",
         "name": "<a target='_blank' href='https://youtu.be/WYzedx83qYM'>Spatianator</a>",
         "tags": [
-          "old",
+          "archived projects",
           "microcontroller",
           "raspberry pi"
         ],
@@ -238,7 +291,7 @@
         "image": "rnn.png",
         "name": "<a target='_blank' href='/posts/recurrent-neural-networks'>Fun with Recurrent Neural Networks</a>",
         "tags": [
-          "old",
+          "archived projects",
           "deep learning",
           "recurrent neural networks"
         ],
@@ -252,7 +305,7 @@
         "image": "cryptokitty.png",
         "name": "<a target='_blank' href='/posts/deep-cryptokitties'>Deep Cryptokitties</a>",
         "tags": [
-          "old",
+          "archived projects",
           "deep learning",
           "general adversarial networks"
         ],
@@ -266,7 +319,7 @@
         "image": "svm.png",
         "name": "<a target='_blank' href='/posts/large-margin-classifiers'>Intuition behind large margin classification</a>",
         "tags": [
-          "old",
+          "archived projects",
           "machine learning",
           "svm"
         ],
@@ -280,7 +333,7 @@
         "image": "nn.png",
         "name": "<a target='_blank' href='/posts/vanilla-neural-network'>I made a vanilla neural network from scratch</a>",
         "tags": [
-          "old",
+          "archived projects",
           "machine learning",
           "deep learning"
         ],
@@ -294,7 +347,7 @@
         "image": "svd.png",
         "name": "<a target='_blank' href='/posts/singular-value-decomposition'>Singular Value Decomposition: Two Perspectives</a>",
         "tags": [
-          "old",
+          "archived projects",
           "linear algebra"
         ],
         "description": [
@@ -312,7 +365,7 @@
         "image": "oauth.png",
         "name": "<a href='https://www.researchgate.net/publication/266022550_OAuth_Demystified_for_Mobile_Application_Developers'>OAuth Demystified for Mobile Applications</a>",
         "tags": [
-          "old",
+          "archived projects",
           "security",
           "oauth"
         ],
@@ -326,7 +379,7 @@
         "image": "timing_attack.png",
         "name": "<a href='https://www.semanticscholar.org/paper/Cross-origin-pixel-stealing%3A-timing-attacks-using-Kotcher-Pei/66a6b8b5086454d2f511089ed3c157075239eb7d?navId=paper-header'>Cross-Origin Pixel Stealing: Timing Attacks Using CSS Filters</a>",
         "tags": [
-          "old",
+          "archived projects",
           "security",
           "timing attacks"
         ],
@@ -341,13 +394,14 @@
     "items": [
       {
         "start": 1988,
-        "name": "<strong>Travel Map</strong> (distinct visits)",
+        "name": "Travel Map (distinct visits)",
+        "image": "pct-of-countries.png",
         "tags": [
           "travel"
         ],
         "description": [
-          "<iframe width='662' height='408' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQs7-o9mY_ol8i4CLCxOi7QRC66z5apxFMj7Mdh-6CG2aLz6QVfBncsTn0eYsr7z04EmqBNh4obesZx/pubchart?oid=1486894346&amp;format=interactive'></iframe>",
-          "<span>Andorra (1), Austria (1), Belize (1), Canada (8), China (1), Colombia (1), Costa Rica (lived), Czech Republic (1), El Salvador (1), France (4), Germany (3), Guatemala (1), Honduras (1), Hungary (1), Iceland (3), Italy (3), Lithuania (1), Malta (1), Mexico (3), Monaco (2), Morocco (3), Netherlands (1), Nicaragua (1), Panama (3), Portugal (1), Romania (1), Scotland (1), Slovenia (1), Spain (lived), Turkey (1), United Kingdom (1), United States (lived), Vatican City (1)</span>",
+          "<!-- GENERATE % CHART AT https://copyicon.com/generator/svg-gauge-chart -->",
+          "<iframe width='100%' height='408' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQs7-o9mY_ol8i4CLCxOi7QRC66z5apxFMj7Mdh-6CG2aLz6QVfBncsTn0eYsr7z04EmqBNh4obesZx/pubchart?oid=1486894346&amp;format=interactive'></iframe></div>",
           "<small>Note: Some of these numbers are approximate. Visits are capped at 10. I consider that I have \"lived\" in a location if I have spent at least six cumulative months there.</small>"
         ]
       },
@@ -370,7 +424,7 @@
         "end": 2014,
         "name": "<a target='_blank' href='https://vigilantaerospace.com/wp-content/uploads/2017/06/Application-of-an-ADS-B-Sense-and-Avoid-Algorithm_AFRC-E-DAA-TN30918_20160007770_opt.pdf'>Federal Laboratory Consortium, Denver</a>",
         "tags": [
-          "old",
+          "archived projects",
           "java"
         ],
         "description": [
@@ -382,7 +436,7 @@
         "end": 2014,
         "name": "<a target='_blank' href='https://evernote.com/security/report-issue'>Evernote Hall of Fame</a>",
         "tags": [
-          "old",
+          "archived projects",
           "security",
           "oauth"
         ],
@@ -395,7 +449,7 @@
         "end": 2014,
         "name": "<a target='_blank' href='https://www.facebook.com/whitehat/thanks/'>Facebook Hall of Fame</a>",
         "tags": [
-          "old",
+          "archived projects",
           "security",
           "oauth"
         ],
@@ -409,7 +463,7 @@
         "image": "millennial_masters.png",
         "name": "Millennial Masters, Vol 3",
         "tags": [
-          "old",
+          "archived projects",
           "music composition"
         ],
         "description": [

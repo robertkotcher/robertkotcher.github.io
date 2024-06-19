@@ -55,9 +55,10 @@
     color: #00e;
   }
 
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 600px) {
     #root {
-      padding: 0px;
+      padding: 5px;
+      position: initial;
     }
 
     .root-level-content-wrapper {

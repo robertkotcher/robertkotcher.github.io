@@ -1,9 +1,10 @@
 <template>
     <span
-      v-on:click="setTag(tag)"
       :class="{ chip: true, primary, secondary, selected, small }"
     >
+      <a :class="{ primary, secondary }" :href="generateLink(tag)">
       {{text}}
+      </a>
     </span>
 </template>
 
@@ -24,6 +25,9 @@
     methods: {
       setTag: function(tag) {
         tagStore.setActiveTag(tag);
+      },
+      generateLink: function(tag) {
+        return "/?tag=" + tag;
       },
     },
   };
