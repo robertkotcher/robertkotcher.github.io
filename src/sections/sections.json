@@ -40,6 +40,23 @@
         ]
       },
       {
+        "image": "gh.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "<a href='https://github.com/robertkotcher/ubuntu-xfce-docker-image' target='_blank'>Ubuntu 20.04 + XFCE + tightvncserver</a>",
+        "tags": [
+          "projects (past year)",
+          "docker",
+          "vnc",
+          "ubuntu"
+        ],
+        "description": [
+          "<img style='width:80%; max-width: 600px;' src='https://raw.githubusercontent.com/robertkotcher/ubuntu-xfce-docker-image/master/xfce.png'/>",
+          "This project is my attempt to create a containerized xfce experience with a really small footprint as I'm interested in stronger isolation across my various projects.",
+          "The image is published to docker at <strong>wheresmycookie/ubuntu-xfce:latest</strong> but I recommend building from source to apply customizations."
+        ]
+      },
+      {
         "image": "argo.png",
         "start": 2023,
         "end": 2024,
