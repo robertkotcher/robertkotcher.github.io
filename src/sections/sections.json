@@ -25,7 +25,7 @@
         "image": "gh.png",
         "start": 2024,
         "end": 2024,
-        "name": "<a href='https://github.com/robertkotcher/app-template' target='_blank'>Fullstack application template</a>",
+        "name": "<a href='https://github.com/robertkotcher/app-template' target='_blank'>Fullstack Application Template</a>",
         "tags": [
           "projects (past year)",
           "python",
@@ -37,6 +37,23 @@
           "<p>I find myself bootstrapping a lot of fullstack applications, so decided to just build a single project that I could use to cut out the initial week or two of development for each of these projects.</p>",
           "<p>This project has the following features:</p>",
           "<p><ul><li>Authentication with JWT / password hashing with sha256</li><li>Email integration with sendgrid, initially used for password reset, etc.</li><li>Stripe payment and subscription management.</li><li>Todo: migrate to <a target='_blank' href='https://docs.python.org/3/library/hashlib.html#hashlib.scrypt'>scrypt</a> key generation, add test suite template</li></ul></p>"
+        ]
+      },
+      {
+        "image": "argo.png",
+        "start": 2023,
+        "end": 2024,
+        "name": "<a href='https://github.com/argoproj/argo-workflows/pull/9992' target='_blank'>Argo Workflows Semaphore-Based Scheduling</a>",
+        "tags": [
+          "projects (past year)",
+          "golang",
+          "infrastructure",
+          "scheduling"
+        ],
+        "description": [
+          "In 2023 was voted an official maintainer for Argo Workflows.",
+          "I noticed that Argo Workflows currently allows for parallelism, but workflows that are submitted later in time must wait to receive resources (as Argo scheduling is queue-based). I thought it'd be interesting to allow more recent Workflow submissions to optionally have equal access to a share of compute resources at submission time.",
+          "In the end, the team decided to not include it as part of the main release cycle, but the fork was used by a few companies who wanted the feature."
         ]
       },
       {
@@ -111,6 +128,7 @@
           "industry",
           "startups",
           "kubernetes",
+          "infrastructure",
           "golang",
           "node js"
         ],
