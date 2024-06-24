@@ -25,9 +25,42 @@
         "image": "gh.png",
         "start": 2024,
         "end": 2024,
-        "name": "Zoom meeting bot",
+        "name": "<a href='https://github.com/robertkotcher/app-template' target='_blank'>Fullstack application template</a>",
         "tags": [
-          "recent projects",
+          "projects (past year)",
+          "python",
+          "flask",
+          "react",
+          "docker"
+        ],
+        "description": [
+          "<p>I find myself bootstrapping a lot of fullstack applications, so decided to just build a single project that I could use to cut out the initial week or two of development for each of these projects.</p>",
+          "<p>This project has the following features:</p>",
+          "<p><ul><li>Authentication with JWT / password hashing with sha256</li><li>Email integration with sendgrid, initially used for password reset, etc.</li><li>Stripe payment and subscription management.</li><li>Todo: migrate to <a target='_blank' href='https://docs.python.org/3/library/hashlib.html#hashlib.scrypt'>scrypt</a> key generation, add test suite template</li></ul></p>"
+        ]
+      },
+      {
+        "image": "hf.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "<a target='_blank' href='https://huggingface.co/rkotcher/roberta_legal_experiment'>Document Section Extractor</a>",
+        "tags": [
+          "projects (past year)",
+          "pytorch",
+          "docker"
+        ],
+        "description": [
+          "<div style='position: relative; padding-bottom: 62.5%; height: 0;'><iframe src='https://www.loom.com/embed/44e26061d3444767939435e91e3b73bc?sid=f038eb53-0cc2-4c61-9078-75ea9500387d' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></iframe></div>",
+          "I built a classifier that could extract the background section from legal documents, built a dataset by hand, and was able to achieve a high F1 score with not too much effort."
+        ]
+      },
+      {
+        "image": "gh.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "<a target='_blank' href='https://github.com/robertkotcher/zoom-meeting-bot'>Zoom meeting bot</a>",
+        "tags": [
+          "projects (past year)",
           "docker"
         ],
         "description": [
@@ -41,7 +74,7 @@
         "end": 2024,
         "name": "Cats Off",
         "tags": [
-          "recent projects",
+          "projects (past year)",
           "arduino"
         ],
         "description": [

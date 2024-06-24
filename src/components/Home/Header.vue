@@ -2,7 +2,7 @@
   <div id="header">
     <div class="chip-container-small" v-if="tagStore.state.activeTag">
       <a href="/" class="header-title-small">Robert Kotcher</a>
-      <Chip small primary tag="recent projects" text="recent projects" :selected="isActiveTag('projects')"/>
+      <Chip small primary tag="projects (past year)" text="projects (past year)" :selected="isActiveTag('projects')"/>
       <Chip small primary tag="education" text="education" :selected="isActiveTag('education')"/>
       <Chip small primary tag="startups" text="startups" :selected="isActiveTag('startups')"/>
       <Chip small primary tag="travel" text="travel" :selected="isActiveTag('languages')"/>
@@ -23,7 +23,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/robert-kotcher-639105196/"><img src="../../assets/li.png" class="header-link"/></a>
         </div>
         <div class="chip-container">
-          <Chip primary tag="recent projects" text="recent projects"/>
+          <Chip primary tag="projects (past year)" text="projects (past year)"/>
           <Chip primary tag="education" text="education"/>
           <Chip primary tag="startups" text="startups"/>
           <Chip primary tag="travel" text="travel"/>
