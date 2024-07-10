@@ -15,6 +15,18 @@
         "description": [
           "<p>I focused on both computer science and music - not so much the combination of the two but rather a deeper, independent, focus on each.</p><br/><p>For example, my violin sonata was released under the <a target='_blank' href='https://open.spotify.com/album/2QDn3jB196YdTkCeLejQsD?si=o2xHYGXTTPu_xy58UDan0Q'>Ablaze Records</a> label, and my string quartet was <a target='_blank' href='https://youtube.com/watch?v=cOQiKpodSNE'>recorded</a> by Grammy-nominated JACK string quartet.</p><br/><p>I also published a few <a target='_blank' href='https://dl.acm.org/profile/84458745857'>highly-cited papers</a> as part of my undergraduate coursework, and was a <a target='_blank' href='https://www.blackhat.com/us-16/speakers/Robert-Kotcher.html'>speaker at Black Hat 2016</a>.</p>"
         ]
+      },
+      {
+        "image": "book_dont_start_side_hustle.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "Don't Start A Side Hustle",
+        "tags": [
+          "books_2024"
+        ],
+        "description": [
+          "<p>This book comes at a really good time for me. As yet another startup company fails and those precious hours are forever wasted (I've known for months that I'm wasting my time, really), I'm hellbent on doing things right. I want to build value, and I'm willing to put in the effort, but I am not willing to write a single line of code that isn't calculated / de-risked. Better yet, somebody else will write the code.</p><p style='margin-top: 20px;'>This book has encouraged me to look for opportunities that will give me time, not waste it. Brian Page does advocate for working hard, but more importantly he emphasizes being calculated, focused, and not participating in activities that will come at an opportunity cost. Time is your most valuable asset.</p><p style='margin-top: 20px;'>Tactically, Brian lists out 3 types of PIVs (passive income vehicles): owned assets, controlled assets, and created assets.</p><p style='margin-top: 20px;'>I will personally be experimenting with some hypotheses with a fellow IndieHacker from Australia in an attempt to build my first 'created' PIV, and this book has been the inspiration I needed to stop investing my time in the same bad way.</p>"
+        ]
       }
     ]
   },
@@ -51,7 +63,7 @@
           "ubuntu"
         ],
         "description": [
-          "<img style='width:80%; max-width: 600px;' src='https://raw.githubusercontent.com/robertkotcher/ubuntu-xfce-docker-image/master/xfce.png'/>",
+          "<img style='width:90%; max-width: 1000px;' src='https://raw.githubusercontent.com/robertkotcher/ubuntu-xfce-docker-image/master/xfce.png'/>",
           "This project is my attempt to create a containerized xfce experience with a really small footprint as I'm interested in stronger isolation across my various projects.",
           "The image is published to docker at <strong>wheresmycookie/ubuntu-xfce:latest</strong> but I recommend building from source to apply customizations."
         ]
