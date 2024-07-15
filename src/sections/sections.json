@@ -17,6 +17,18 @@
         ]
       },
       {
+        "image": "book_the_mom_test.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "The Mom Test",
+        "tags": [
+          "books_2024"
+        ],
+        "description": [
+          "<p>I chose <em>The Mom Test</em> because I’m actively trying to dig and uncover pain points. Customer discovery has always been something that I feared - I would avoid these conversations and always slip into the “build it and then we’ll see” mentality.</p><br/><p>Prepping for meetings:</p><br/><ul style='padding-left: 20px;'><li>What is their currency? Look for things that they have to think about twice before giving it to you (as opposed to compliments). Plan for what the ask will be?</li></ul><br/><p>In-meeting guidance:</p><br/><ul style='padding-left: 20px;'><li>Ask about the past and be concrete</li><li>Don’t talk about your idea, price</li><li>Avoid leaning into problems that don’t matter</li><li>What have they tried? (Suarav did mock interviews with his family)</li><li>3 types of bad data: ideas, fluff, compliments</li><li>Finishing questions: Who else should I talk to? Anything else I forgot to talk about? What are the next steps?</li></ul><br/><p>“You aren’t allowed to tell them their problem. They aren’t allowed to tell you what to build”</p>"
+        ]
+      },
+      {
         "image": "yc.png",
         "start": 2024,
         "end": 2024,
