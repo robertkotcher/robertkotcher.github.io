@@ -17,22 +17,46 @@
         ]
       },
       {
-        "image": "book_start_small_stay_small.png",
+        "image": "cash_flow_business_model.png",
         "start": 2024,
         "end": 2024,
-        "name": "Start Small Stay Small",
+        "name": "The Cash Flow Business Model (Automated Retirees)",
         "tags": [
           "books_2024"
         ],
         "description": [
-          "<p>The book describes how to build a business as a micropreneur or bootstrapper. It talks about the benefits of finding niches and where to look, building a product in a lean way / test with landing page, and stresses outsourcing and not spending a lot of hours building yourself until you have a strong enough signal.</p><br/><p>I honestly had a bit of trouble staying engaged with this book as I didn't find the structure intuitive (too many sections / subsections / redundancy across chapters), so I only read about half, then found notes talking about the second half.</p><br/><a href='https://docs.google.com/document/d/1Wq2E4djY0aO2ONIXZ3bBqxfN5HEutQm5JopvK5YzwdI/edit?usp=sharing'>Notes</a>"
+          "<p>I chose this book to get a sense for what rental arbitrage entails and to understand what the pros/cons, and risks/rewards are. I also didn't quite understand the incentive for a landlord to work with an arbitreur when they could just make the spread themself. <a href='https://docs.google.com/document/d/14H6ZuAODMJo0Y9y5K0pcXYrf1pwLZYNw4Dj3HYq4Ehc/edit?usp=sharing'>Notes</a></p>"
+        ]
+      },  
+      {
+        "image": "million_dollar_weekend.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "Million Dollar Weekend (Noah Kagan)",
+        "tags": [
+          "books_2024"
+        ],
+        "description": [
+          "<p>This book covered some topics that have been covered in many other startup books. One thing that I admire about Noah is his ambition and drive to 'just start' and to treasure rejection. I'd like to try the coffee challenge some day. <a href='https://docs.google.com/document/d/1b7eg6SrTnxEwbEGz5ZF8QkvBaZxDhFdczL4k3Jan_JY/edit?usp=sharing'>Notes</a></p>"
+        ]
+      },  
+      {
+        "image": "book_start_small_stay_small.png",
+        "start": 2024,
+        "end": 2024,
+        "name": "Start Small Stay Small (Rob Walling)",
+        "tags": [
+          "books_2024"
+        ],
+        "description": [
+          "<p>The book describes how to build a business as a micropreneur or bootstrapper. It talks about the benefits of finding niches and where to look, building a product in a lean way / test with landing page, and stresses outsourcing and not spending a lot of hours building yourself until you have a strong enough signal.</p><br/><p>I honestly had a bit of trouble staying engaged with this book as I didn't find the structure intuitive (too many sections / subsections / redundancy across chapters), so I only read about half, then found notes talking about the second half. <a href='https://docs.google.com/document/d/1Wq2E4djY0aO2ONIXZ3bBqxfN5HEutQm5JopvK5YzwdI/edit?usp=sharing'>Notes</a></p>"
         ]
       },      
       {
         "image": "book_the_mom_test.png",
         "start": 2024,
         "end": 2024,
-        "name": "The Mom Test",
+        "name": "The Mom Test (Rob Fitzpatrick)",
         "tags": [
           "books_2024"
         ],
@@ -56,7 +80,7 @@
         "image": "book_dont_start_side_hustle.png",
         "start": 2024,
         "end": 2024,
-        "name": "Don't Start A Side Hustle",
+        "name": "Don't Start A Side Hustle (Brian Page)",
         "tags": [
           "books_2024"
         ],
